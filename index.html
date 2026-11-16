@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worth Owning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: a quiet catalog. One didone headline, a single row of pill
+     filters, then white cards on a soft grey page, three across. */
+  --paper:#F2F3F1;
+  --tile:#FFFFFF;
+  --ink:#131614;
+  --muted:#5F6661;
+  --line:#DDE0DA;
+  --accent:#2C5A45;
+  --font-display:"Bodoni Moda","Bodoni 72","Didot","Bodoni MT",Georgia,serif;
+  --font-body:"Hanken Grotesk","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  --gutter:clamp(18px,4vw,44px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1211;
+    --tile:#181C1A;
+    --ink:#E9ECE7;
+    --muted:#99A29B;
+    --line:#262C28;
+    --accent:#9FCCB3;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1211;
+  --tile:#181C1A;
+  --ink:#E9ECE7;
+  --muted:#99A29B;
+  --line:#262C28;
+  --accent:#9FCCB3;
+  color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+h1,h2,h3,p,ul{margin:0}
+ul{padding:0;list-style:none}
+.wrap{max-width:1240px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+section[id]{scroll-margin-top:16px}
+
+/* Top bar */
+.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;padding-top:22px;padding-bottom:8px}
+.wordmark{font-family:var(--font-display);font-style:italic;font-size:1.3rem;letter-spacing:-.005em;text-decoration:none}
+.top nav{display:flex;gap:20px;font-size:.86rem}
+.top nav a{text-decoration:none;color:var(--muted);padding:6px 0}
+.top nav a:hover{color:var(--ink)}
+
+/* Hero */
+.hero{padding-top:clamp(48px,9vw,120px);padding-bottom:clamp(40px,7vw,88px)}
+h1{
+  font-family:var(--font-display);
+  font-weight:400;
+  font-size:clamp(2.5rem,8.5vw,4.9rem);
+  line-height:1;
+  letter-spacing:-.016em;
+  max-width:13ch;
+  text-wrap:balance;
+}
+h1 em{font-style:italic}
+.lede{max-width:44ch;margin-top:clamp(16px,2.4vw,24px);font-size:clamp(1rem,1.5vw,1.1rem);color:var(--muted)}
+
+/* Filters: one row of text */
+.tabs{
+  display:flex;flex-wrap:nowrap;align-items:center;gap:4px 2px;
+  overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  margin:0 calc(-1 * var(--gutter));padding:4px var(--gutter);
+}
+.tabs::-webkit-scrollbar{display:none}
+@media (min-width:1000px){.tabs{flex-wrap:wrap;overflow:visible;margin:0;padding:4px 0}}
+.tab{
+  flex:none;min-height:38px;padding:0 14px;border-radius:999px;
+  background:none;border:0;cursor:pointer;white-space:nowrap;
+  font:500 .9rem/1 var(--font-body);color:var(--muted);
+}
+.tab:hover{color:var(--ink)}
+.tab[aria-pressed="true"]{background:var(--tile);color:var(--ink)}
+.sep{flex:none;width:1px;height:14px;margin:0 8px;background:var(--line)}
+.fineprint{max-width:72ch;margin:12px 0 clamp(20px,3vw,28px);padding-left:14px;font-size:.8rem;color:var(--muted)}
+.fineprint a{text-underline-offset:3px}
+
+/* Grid of picks */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:720px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
+.grid > li{min-width:0;display:flex}
+.card{
+  position:relative;display:flex;flex-direction:column;width:100%;
+  text-decoration:none;background:var(--tile);border-radius:16px;overflow:hidden;
+}
+.art{position:relative;aspect-ratio:1/.84;display:grid;place-items:center;container-type:inline-size}
+.tile-mono{
+  font-family:var(--font-display);font-style:italic;font-weight:400;
+  font-size:3.4rem;font-size:30cqi;line-height:1;
+  color:color-mix(in oklab,var(--ink) 10%,var(--tile));
+}
+.art img{position:absolute;inset:9%;width:82%;height:82%;object-fit:contain}
+.out{
+  position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;
+  display:grid;place-items:center;background:var(--paper);color:var(--muted);
+  transition:background-color .2s ease,color .2s ease;
+}
+.info{margin-top:auto;padding:4px 16px 16px}
+.meta{font-size:.8rem;color:var(--muted)}
+.row{display:flex;align-items:baseline;justify-content:space-between;gap:2px 14px;margin-top:2px}
+.name{min-width:0;font:500 .92rem/1.35 var(--font-body)}
+.nb{white-space:nowrap}
+.price{flex:none;font-size:.92rem;font-variant-numeric:tabular-nums}
+@media (max-width:560px){
+  .card{border-radius:12px}
+  .out{top:8px;right:8px;width:28px;height:28px}
+  .info{padding:2px 12px 12px}
+  .row{flex-direction:column}
+  .price{color:var(--muted)}
+}
+@media (hover:hover){
+  .card:hover .out{background:var(--ink);color:var(--paper)}
+}
+
+/* Criteria */
+.criteria{margin-top:clamp(88px,12vw,160px);padding-top:clamp(40px,6vw,72px);border-top:1px solid var(--line)}
+h2{
+  font-family:var(--font-display);font-weight:400;
+  font-size:clamp(1.7rem,4.2vw,2.6rem);line-height:1.06;letter-spacing:-.012em;
+  max-width:17ch;text-wrap:balance;
+}
+.tests{display:grid;gap:22px 28px;margin-top:clamp(24px,4vw,44px)}
+@media (min-width:720px){.tests{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tests h3{font:600 .95rem/1.3 var(--font-body)}
+.tests p{margin-top:4px;max-width:36ch;font-size:.92rem;color:var(--muted)}
+
+/* Disclosure */
+.disclosure{display:grid;gap:18px 28px;margin-top:clamp(64px,9vw,120px);padding-top:clamp(40px,6vw,72px);border-top:1px solid var(--line)}
+@media (min-width:720px){.disclosure{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}}
+.prose{display:grid;gap:12px;max-width:62ch;font-size:.95rem;color:var(--muted)}
+
+/* Footer */
+.foot{
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;
+  margin-top:clamp(64px,9vw,120px);padding-top:22px;padding-bottom:40px;
+  border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);
+}
+.foot .wordmark{color:var(--ink)}
+
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media (prefers-reduced-motion:reduce){.out{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top wrap" id="top">
+  <a class="wordmark" href="#top">Worth Owning</a>
+  <nav aria-label="Sections">
+    <a href="#picks">Picks</a>
+    <a href="#criteria">Criteria</a>
+    <a href="#disclosure">Disclosure</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <h1>A short list of things <em>worth owning.</em></h1>
+    <p class="lede">Japanese craft, stainless steel and things you only buy once.</p>
+  </section>
+
+  <section class="wrap" id="picks" aria-labelledby="picks-h">
+    <h2 class="sr-only" id="picks-h">Picks</h2>
+    <div class="filters">
+      <div class="tabs" id="tabs" role="group" aria-label="Filter the list"></div>
+    </div>
+    <p class="fineprint">I may earn a commission when you buy through these links. <a href="#disclosure">Details</a></p>
+    <p class="sr-only" id="status" aria-live="polite"></p>
+    <ul class="grid" id="grid"></ul>
+    <noscript><p class="fineprint">Turn on JavaScript to see the picks.</p></noscript>
+  </section>
+
+  <section class="wrap criteria" id="criteria" aria-labelledby="criteria-h">
+    <h2 id="criteria-h">Three tests before anything gets listed</h2>
+    <ul class="tests">
+      <li><h3>Lived with</h3><p>I've owned it or used it long enough to know where it falls short.</p></li>
+      <li><h3>Earns its place</h3><p>It fixes an annoyance that kept coming back.</p></li>
+      <li><h3>Would rebuy</h3><p>If it broke tomorrow, I'd order the same one again.</p></li>
+    </ul>
+  </section>
+
+  <section class="wrap disclosure" id="disclosure" aria-labelledby="disclosure-h">
+    <h2 id="disclosure-h">Disclosure</h2>
+    <div class="prose">
+      <p>Some links on this site are affiliate links. If you buy through one, I may earn a commission from the store, and you pay the same price either way.</p>
+      <p id="amazon-line" hidden>As an Amazon Associate I earn from qualifying purchases.</p>
+      <p>Nobody pays to be listed, and a commission never decides what makes the cut.</p>
+      <p>Prices were checked on 14 November 2026. Stores change them often, so the price on the store's page is the one that counts.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span class="wordmark">Worth Owning</span>
+  <span>© 2026 · Preview build. Letter tiles stand in for photos.</span>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   YOUR PICKS. Edit this list and the page rebuilds itself.
+
+   brand, name   shown on the card
+   cat           one of the ids in CATS below
+   tags          any of "forever", "japan", "stainless"
+   price         a number, or null to show no price
+                 (keep null for Amazon links: Amazon does not allow
+                 hand-typed prices)
+   from          true shows "from $180" for items with several sizes
+   url           the product link
+   affiliate     true marks the link rel="sponsored" for search engines
+   image         path to a photo you have the right to use; leave out
+                 to show the letter tile
+   yours         true for picks you chose; these appear under "Your picks"
+   note, store   not shown on the cards; kept for product pages later
+   ------------------------------------------------------------------ */
+
+/* Your Amazon Associates tag, for example "yourname-20". Once set, it is
+   added to every amazon.com link and the Amazon line appears in the
+   disclosure. */
+var AMAZON_TAG = "dario0fa-20";
+
+var CATS = [
+  { id: "kitchen",  label: "Kitchen" },
+  { id: "coffee",   label: "Coffee" },
+  { id: "grooming", label: "Grooming" },
+  { id: "tools",    label: "Tools" },
+  { id: "carry",    label: "Carry" }
+];
+
+var TAGS = [
+  { id: "forever",   label: "Buy it forever" },
+  { id: "japan",     label: "Japanese" },
+  { id: "stainless", label: "Stainless steel" }
+];
+
+var PRODUCTS = [
+  /* ---- Your picks ---- */
+  { brand: "Green Bell", name: "Takumi no Waza Nail Clipper G-1205", cat: "grooming", price: null,
+    tags: ["forever", "japan", "stainless"], yours: true,
+    note: "Twice-sharpened stainless blades, made in Japan.", store: "Amazon",
+    url: "https://www.amazon.com/dp/B07HHZWF57" },
+  { brand: "Snow Peak", name: "Ti-Single 600 Cup", cat: "carry", price: null,
+    tags: ["forever", "japan"], yours: true,
+    note: "Single-wall titanium, 600 ml, safe over a flame.", store: "Amazon",
+    url: "https://www.amazon.com/dp/B06XX4G5XT" },
+  { brand: "Amazon", name: "Your pick, name needed", cat: null, price: null, tags: [], yours: true, pending: true,
+    note: "Waiting on the product name for this link.", store: "Amazon",
+    url: "https://a.co/d/00NiGoTN" },
+  { brand: "Amazon", name: "Your pick, name needed", cat: null, price: null, tags: [], yours: true, pending: true,
+    note: "Waiting on the product name for this link.", store: "Amazon",
+    url: "https://a.co/d/064VCq0W" },
+  { brand: "Amazon", name: "Your pick, name needed", cat: null, price: null, tags: [], yours: true, pending: true,
+    note: "Waiting on the product name for this link.", store: "Amazon",
+    url: "https://a.co/d/0490aFKa" },
+
+  /* ---- Suggestions: kitchen ---- */
+  { brand: "Sori Yanagi", name: "Stainless Steel Kettle", cat: "kitchen", price: 175,
+    tags: ["forever", "japan", "stainless"],
+    note: "2.5 L kettle, made by hand in Niigata since 1994.", store: "Tortoise",
+    url: "https://shop.tortoisegeneralstore.com/products/ts001-kettle-yanagi" },
+  { brand: "Tojiro", name: "DP Gyuto 210 mm", cat: "kitchen", price: null,
+    tags: ["forever", "japan", "stainless"],
+    note: "VG10 core in stainless cladding, made in Tsubame.", store: "Cutlery & More",
+    url: "https://cutleryandmore.com/collections/tojiro/products/tojiro-dp-chefs-knife-13709" },
+  { brand: "Toribe", name: "Kitchen Scissors KS-203", cat: "kitchen", price: 89,
+    tags: ["forever", "japan", "stainless"],
+    note: "All stainless. Comes apart to wash and sharpen.", store: "Japanese Taste",
+    url: "https://japanesetaste.com/products/toribe-scissors-kitchen-shears-ks-203" },
+  { brand: "All-Clad", name: "D3 Stainless 12-inch Fry Pan with Lid", cat: "kitchen", price: 149.99,
+    tags: ["forever", "stainless"],
+    note: "Tri-ply stainless, oven safe to 600°F.", store: "Macy's",
+    url: "https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035" },
+  { brand: "Lodge", name: "10.25-inch Cast Iron Skillet", cat: "kitchen", price: 34.95,
+    tags: ["forever"],
+    note: "Iron and oil, made in the USA.", store: "REI",
+    url: "https://www.rei.com/product/714234" },
+
+  /* ---- Suggestions: coffee ---- */
+  { brand: "Hario", name: "Switch Immersion Dripper 02", cat: "coffee", price: 44.5,
+    tags: ["japan"],
+    note: "Steeps like a French press, drains like a V60.", store: "Hario",
+    url: "https://www.hario-usa.com/collections/other/products/switch-immersion-dripper" },
+  { brand: "Kalita", name: "Wave 185 Stainless Dripper", cat: "coffee", price: 42,
+    tags: ["forever", "japan", "stainless"],
+    note: "Flat-bottom pour-over dripper, made in Japan.", store: "Espresso Parts",
+    url: "https://www.espressoparts.com/products/kalita-wave-stainless-steel-dripper-185" },
+
+  /* ---- Suggestions: grooming ---- */
+  { brand: "Feather", name: "AS-D2 Stainless Safety Razor", cat: "grooming", price: 239,
+    tags: ["forever", "japan", "stainless"],
+    note: "All-stainless razor, made in Seki.", store: "Pasteur Pharmacy",
+    url: "https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor" },
+
+  /* ---- Suggestions: tools ---- */
+  { brand: "Knipex", name: "Cobra XS Pliers", cat: "tools", price: 32.72,
+    tags: ["forever"],
+    note: "Four-inch pliers that grip like full-size ones.", store: "KC Tool",
+    url: "https://kctool.com/knipex-cobra-xs-pliers" },
+  { brand: "Olfa", name: "SVR-2 Stainless Knife", cat: "tools", price: 9.99,
+    tags: ["forever", "japan", "stainless"],
+    note: "Slim stainless snap-blade knife with a pocket clip.", store: "Olfa",
+    url: "https://olfa.com/products/9mm-svr-2-stainless-steel-auto-knife" },
+  { brand: "Engineer", name: "PZ-58 Screw Removal Pliers", cat: "tools", price: null,
+    tags: ["forever", "japan"],
+    note: "Jaws that grip and turn stripped screws.", store: "Engineer",
+    url: "https://www.engineertools-jp.com/product-page/pz-58-screw-removal-pliers-gt" },
+  { brand: "Okatsune", name: "103 Bypass Pruners", cat: "tools", price: 60.99,
+    tags: ["forever", "japan"],
+    note: "Yasuki steel pruners, made in Japan.", store: "Hardwick & Sons",
+    url: "https://hardwickandsons.com/products/japanese-okatsune-bypass-pruners-no-103-medium" },
+  { brand: "Silca", name: "Pista Plus Floor Pump", cat: "tools", price: 215,
+    tags: ["forever"],
+    note: "Steel barrel, leather gasket, built to be rebuilt.", store: "Silca",
+    url: "https://silca.cc/products/pista-plus-floor-pump" },
+
+  /* ---- Suggestions: carry ---- */
+  { brand: "Zojirushi", name: "Stainless Mug SM-KHE48, 16 oz", cat: "carry", price: 39.99,
+    tags: ["japan", "stainless"],
+    note: "Vacuum mug that holds heat for six hours.", store: "Zojirushi",
+    url: "https://store.zojirushi.com/products/smkhe48" },
+  { brand: "Zebra", name: "F-701 Ballpoint", cat: "carry", price: null,
+    tags: ["japan", "stainless"],
+    note: "Stainless from tip to clip, and refillable.", store: "Zebra",
+    url: "https://zebrapen.com/pages/f-701-all-metal-retractable-ballpoint" },
+  { brand: "Leatherman", name: "Wave Plus", cat: "carry", price: 129.95,
+    tags: ["forever", "stainless"],
+    note: "18 tools, made in Portland, 25-year warranty.", store: "Leatherman",
+    url: "https://www.leatherman.com/wave-plus" },
+  { brand: "Stanley", name: "Classic Legendary Bottle, 32 oz", cat: "carry", price: 39,
+    tags: ["forever", "stainless"],
+    note: "Steel vacuum bottle with a lifetime warranty.", store: "Al's",
+    url: "https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p" }
+];
+
+(function () {
+  var state = { filter: "all" };
+  var grid = document.getElementById("grid");
+  var tabs = document.getElementById("tabs");
+  var status = document.getElementById("status");
+
+  function el(tag, props, kids) {
+    var n = document.createElement(tag), k;
+    for (k in (props || {})) {
+      if (k === "text") n.textContent = props[k];
+      else if (k === "class") n.className = props[k];
+      else n.setAttribute(k, props[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) n.appendChild(c); });
+    return n;
+  }
+
+  function find(list, id) {
+    for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i];
+    return null;
+  }
+
+  function matches(p, f) {
+    if (f === "all") return true;
+    if (f === "yours") return !!p.yours;
+    if (find(TAGS, f)) return (p.tags || []).indexOf(f) !== -1;
+    return p.cat === f;
+  }
+
+  function filterLabel(f) {
+    if (f === "yours") return "Your picks";
+    var x = find(TAGS, f) || find(CATS, f);
+    return x ? x.label : "the whole list";
+  }
+
+  function isAmazon(url) { return /^https:\/\/(www\.)?amazon\.com\//.test(url); }
+
+  function link(p) {
+    if (AMAZON_TAG && isAmazon(p.url)) {
+      return p.url + (p.url.indexOf("?") === -1 ? "?" : "&") + "tag=" + encodeURIComponent(AMAZON_TAG);
+    }
+    return p.url;
+  }
+
+  function money(p) {
+    var digits = Number.isInteger(p.price) ? 0 : 2;
+    var s = p.price.toLocaleString("en-US", {
+      style: "currency", currency: "USD",
+      minimumFractionDigits: digits, maximumFractionDigits: digits
+    });
+    return (p.from ? "from " : "") + s;
+  }
+
+  /* Keeps model numbers such as KS-203 from splitting across lines. */
+  function nameNode(text) {
+    var h = el("h3", { class: "name" });
+    text.split(" ").forEach(function (w, i) {
+      if (i) h.appendChild(document.createTextNode(" "));
+      h.appendChild(w.indexOf("-") === -1 ? document.createTextNode(w) : el("span", { class: "nb", text: w }));
+    });
+    return h;
+  }
+
+  function card(p) {
+    var cat = find(CATS, p.cat);
+    var art = p.image
+      ? el("img", { src: p.image, alt: "", loading: "lazy" })
+      : el("span", { class: "tile-mono", text: p.pending ? "?" : p.brand.charAt(0) });
+    var out = el("span", { class: "out", "aria-hidden": "true" });
+    out.innerHTML = '<svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>';
+    var paid = p.affiliate || (AMAZON_TAG && isAmazon(p.url));
+    /* On your own domain you can add target="_blank" here. */
+    var a = el("a", {
+      class: "card", href: link(p),
+      rel: paid ? "sponsored nofollow noopener" : "noopener"
+    }, [
+      el("div", { class: "art", "aria-hidden": "true" }, [art]),
+      out,
+      el("div", { class: "info" }, [
+        el("p", { class: "meta", text: p.brand + (cat ? " · " + cat.label : "") }),
+        el("div", { class: "row" }, [
+          nameNode(p.name),
+          p.price == null ? null : el("p", { class: "price", text: money(p) })
+        ])
+      ]),
+      el("span", { class: "sr-only", text: "View at " + p.store })
+    ]);
+    return el("li", null, [a]);
+  }
+
+  function render() {
+    var list = PRODUCTS.filter(function (p) { return matches(p, state.filter); });
+    grid.textContent = "";
+    list.forEach(function (p) { grid.appendChild(card(p)); });
+    Array.prototype.forEach.call(tabs.querySelectorAll(".tab"), function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-filter") === state.filter));
+    });
+    status.textContent = "Showing " + list.length + " picks in " + filterLabel(state.filter) + ".";
+  }
+
+  function tab(id, label) {
+    var b = el("button", { class: "tab", type: "button", "data-filter": id, "aria-pressed": "false", text: label });
+    b.addEventListener("click", function () {
+      state.filter = id;
+      try { if (location.hash !== "#" + id) location.hash = id; } catch (e) {}
+      render();
+    });
+    return b;
+  }
+
+  function readHash() {
+    var h = (location.hash || "").replace("#", "");
+    if (h === "all" || h === "yours" || find(TAGS, h) || find(CATS, h)) { state.filter = h; return true; }
+    return false;
+  }
+
+  tabs.appendChild(tab("all", "All"));
+  tabs.appendChild(tab("yours", "Your picks"));
+  TAGS.forEach(function (t) { tabs.appendChild(tab(t.id, t.label)); });
+  tabs.appendChild(el("span", { class: "sep", "aria-hidden": "true" }));
+  CATS.forEach(function (c) { tabs.appendChild(tab(c.id, c.label)); });
+
+  if (AMAZON_TAG) document.getElementById("amazon-line").hidden = false;
+  window.addEventListener("hashchange", function () { if (readHash()) render(); });
+
+  readHash();
+  render();
+})();
+</script>
+</body>
+</html>
