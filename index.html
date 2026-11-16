@@ -106,6 +106,7 @@ h1 em{font-style:italic}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 @media (min-width:720px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
 .grid > li{min-width:0;display:flex}
+.grid > li[hidden]{display:none}
 .card{
   position:relative;display:flex;flex-direction:column;width:100%;
   text-decoration:none;background:var(--tile);border-radius:16px;overflow:hidden;
@@ -188,12 +189,36 @@ h2{
   <section class="wrap" id="picks" aria-labelledby="picks-h">
     <h2 class="sr-only" id="picks-h">Picks</h2>
     <div class="filters">
-      <div class="tabs" id="tabs" role="group" aria-label="Filter the list"></div>
+      <div class="tabs" id="tabs" role="group" aria-label="Filter the list"><button class="tab" type="button" data-filter="all" aria-pressed="true">All</button><button class="tab" type="button" data-filter="yours" aria-pressed="false">Your picks</button><button class="tab" type="button" data-filter="forever" aria-pressed="false">Buy it forever</button><button class="tab" type="button" data-filter="japan" aria-pressed="false">Japanese</button><button class="tab" type="button" data-filter="stainless" aria-pressed="false">Stainless steel</button><span class="sep" aria-hidden="true"></span><button class="tab" type="button" data-filter="kitchen" aria-pressed="false">Kitchen</button><button class="tab" type="button" data-filter="coffee" aria-pressed="false">Coffee</button><button class="tab" type="button" data-filter="grooming" aria-pressed="false">Grooming</button><button class="tab" type="button" data-filter="tools" aria-pressed="false">Tools</button><button class="tab" type="button" data-filter="carry" aria-pressed="false">Carry</button></div>
     </div>
     <p class="fineprint">I may earn a commission when you buy through these links. <a href="#disclosure">Details</a></p>
     <p class="sr-only" id="status" aria-live="polite"></p>
-    <ul class="grid" id="grid"></ul>
-    <noscript><p class="fineprint">Turn on JavaScript to see the picks.</p></noscript>
+    <ul class="grid" id="grid">
+      <li data-cat="grooming" data-tags="forever japan stainless" data-yours><a class="card" href="https://www.amazon.com/dp/B07HHZWF57?tag=dario0fa-20" rel="sponsored nofollow noopener"><div class="art" aria-hidden="true"><img src="images/green-bell-g-1205.jpg" alt=""></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Green Bell · Grooming</p><div class="row"><h3 class="name">Takumi no Waza Nail Clipper <span class="nb">G-1205</span></h3></div></div><span class="sr-only">View at Amazon</span></a></li>
+      <li data-cat="carry" data-tags="forever japan" data-yours><a class="card" href="https://www.amazon.com/dp/B06XX4G5XT?tag=dario0fa-20" rel="sponsored nofollow noopener"><div class="art" aria-hidden="true"><img src="images/snow-peak-ti-single.jpg" alt=""></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Snow Peak · Carry</p><div class="row"><h3 class="name"><span class="nb">Ti-Single</span> 600 Cup</h3></div></div><span class="sr-only">View at Amazon</span></a></li>
+      <li data-cat="coffee" data-tags="stainless" data-yours><a class="card" href="https://www.amazon.com/dp/B0BF7HJ8MX?tag=dario0fa-20" rel="sponsored nofollow noopener"><div class="art" aria-hidden="true"><img src="images/fellow-stagg-ekg-pro.jpg" alt=""></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Fellow · Coffee</p><div class="row"><h3 class="name">Stagg EKG Pro Electric Kettle</h3></div></div><span class="sr-only">View at Amazon</span></a></li>
+      <li data-cat="tools" data-tags="forever japan stainless" data-yours><a class="card" href="https://olfa.com/products/9mm-svr-2-stainless-steel-auto-knife" rel="noopener"><div class="art" aria-hidden="true"><img src="images/olfa-svr-2.jpg" alt=""></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Olfa · Tools</p><div class="row"><h3 class="name"><span class="nb">SVR-2</span> Stainless Knife</h3><p class="price">$9.99</p></div></div><span class="sr-only">View at Olfa</span></a></li>
+      <li data-cat="grooming" data-tags="" data-yours><div class="card"><div class="art" aria-hidden="true"><img src="images/marvis-whitening-mint.jpg" alt=""></div><div class="info"><p class="meta">Marvis · Grooming</p><div class="row"><h3 class="name">Whitening Mint Toothpaste</h3></div></div></div></li>
+      <li data-cat="carry" data-tags="forever" data-yours><div class="card"><div class="art" aria-hidden="true"><img src="images/zippo-brushed-chrome.jpg" alt=""></div><div class="info"><p class="meta">Zippo · Carry</p><div class="row"><h3 class="name">Brushed Chrome Lighter</h3></div></div></div></li>
+      <li data-cat="" data-tags="" data-yours><a class="card" href="https://a.co/d/00NiGoTN" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">?</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Amazon</p><div class="row"><h3 class="name">Your pick, name needed</h3></div></div><span class="sr-only">View at Amazon</span></a></li>
+      <li data-cat="" data-tags="" data-yours><a class="card" href="https://a.co/d/064VCq0W" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">?</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Amazon</p><div class="row"><h3 class="name">Your pick, name needed</h3></div></div><span class="sr-only">View at Amazon</span></a></li>
+      <li data-cat="" data-tags="" data-yours><a class="card" href="https://a.co/d/0490aFKa" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">?</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Amazon</p><div class="row"><h3 class="name">Your pick, name needed</h3></div></div><span class="sr-only">View at Amazon</span></a></li>
+      <li data-cat="kitchen" data-tags="forever japan stainless"><a class="card" href="https://cutleryandmore.com/collections/tojiro/products/tojiro-dp-chefs-knife-13709" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">T</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Tojiro · Kitchen</p><div class="row"><h3 class="name">DP Gyuto 210 mm</h3></div></div><span class="sr-only">View at Cutlery &amp; More</span></a></li>
+      <li data-cat="kitchen" data-tags="forever japan stainless"><a class="card" href="https://japanesetaste.com/products/toribe-scissors-kitchen-shears-ks-203" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">T</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Toribe · Kitchen</p><div class="row"><h3 class="name">Kitchen Scissors <span class="nb">KS-203</span></h3><p class="price">$89</p></div></div><span class="sr-only">View at Japanese Taste</span></a></li>
+      <li data-cat="kitchen" data-tags="forever stainless"><a class="card" href="https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">A</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">All-Clad · Kitchen</p><div class="row"><h3 class="name">D3 Stainless <span class="nb">12-inch</span> Fry Pan with Lid</h3><p class="price">$149.99</p></div></div><span class="sr-only">View at Macy&#x27;s</span></a></li>
+      <li data-cat="kitchen" data-tags="forever"><a class="card" href="https://www.rei.com/product/714234" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">L</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Lodge · Kitchen</p><div class="row"><h3 class="name"><span class="nb">10.25-inch</span> Cast Iron Skillet</h3><p class="price">$34.95</p></div></div><span class="sr-only">View at REI</span></a></li>
+      <li data-cat="coffee" data-tags="japan"><a class="card" href="https://www.hario-usa.com/collections/other/products/switch-immersion-dripper" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">H</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Hario · Coffee</p><div class="row"><h3 class="name">Switch Immersion Dripper 02</h3><p class="price">$44.50</p></div></div><span class="sr-only">View at Hario</span></a></li>
+      <li data-cat="coffee" data-tags="forever japan stainless"><a class="card" href="https://www.espressoparts.com/products/kalita-wave-stainless-steel-dripper-185" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">K</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Kalita · Coffee</p><div class="row"><h3 class="name">Wave 185 Stainless Dripper</h3><p class="price">$42</p></div></div><span class="sr-only">View at Espresso Parts</span></a></li>
+      <li data-cat="grooming" data-tags="forever japan stainless"><a class="card" href="https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">F</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Feather · Grooming</p><div class="row"><h3 class="name"><span class="nb">AS-D2</span> Stainless Safety Razor</h3><p class="price">$239</p></div></div><span class="sr-only">View at Pasteur Pharmacy</span></a></li>
+      <li data-cat="tools" data-tags="forever"><a class="card" href="https://kctool.com/knipex-cobra-xs-pliers" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">K</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Knipex · Tools</p><div class="row"><h3 class="name">Cobra XS Pliers</h3><p class="price">$32.72</p></div></div><span class="sr-only">View at KC Tool</span></a></li>
+      <li data-cat="tools" data-tags="forever japan"><a class="card" href="https://www.engineertools-jp.com/product-page/pz-58-screw-removal-pliers-gt" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">E</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Engineer · Tools</p><div class="row"><h3 class="name"><span class="nb">PZ-58</span> Screw Removal Pliers</h3></div></div><span class="sr-only">View at Engineer</span></a></li>
+      <li data-cat="tools" data-tags="forever japan"><a class="card" href="https://hardwickandsons.com/products/japanese-okatsune-bypass-pruners-no-103-medium" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">O</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Okatsune · Tools</p><div class="row"><h3 class="name">103 Bypass Pruners</h3><p class="price">$60.99</p></div></div><span class="sr-only">View at Hardwick &amp; Sons</span></a></li>
+      <li data-cat="tools" data-tags="forever"><a class="card" href="https://silca.cc/products/pista-plus-floor-pump" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">S</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Silca · Tools</p><div class="row"><h3 class="name">Pista Plus Floor Pump</h3><p class="price">$215</p></div></div><span class="sr-only">View at Silca</span></a></li>
+      <li data-cat="carry" data-tags="japan stainless"><a class="card" href="https://store.zojirushi.com/products/smkhe48" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">Z</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Zojirushi · Carry</p><div class="row"><h3 class="name">Stainless Mug <span class="nb">SM-KHE48,</span> 16 oz</h3><p class="price">$39.99</p></div></div><span class="sr-only">View at Zojirushi</span></a></li>
+      <li data-cat="carry" data-tags="japan stainless"><a class="card" href="https://zebrapen.com/pages/f-701-all-metal-retractable-ballpoint" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">Z</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Zebra · Carry</p><div class="row"><h3 class="name"><span class="nb">F-701</span> Ballpoint</h3></div></div><span class="sr-only">View at Zebra</span></a></li>
+      <li data-cat="carry" data-tags="forever stainless"><a class="card" href="https://www.leatherman.com/wave-plus" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">L</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Leatherman · Carry</p><div class="row"><h3 class="name">Wave Plus</h3><p class="price">$129.95</p></div></div><span class="sr-only">View at Leatherman</span></a></li>
+      <li data-cat="carry" data-tags="forever stainless"><a class="card" href="https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p" rel="noopener"><div class="art" aria-hidden="true"><span class="tile-mono">S</span></div><span class="out" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span><div class="info"><p class="meta">Stanley · Carry</p><div class="row"><h3 class="name">Classic Legendary Bottle, 32 oz</h3><p class="price">$39</p></div></div><span class="sr-only">View at Al&#x27;s</span></a></li>
+    </ul>
   </section>
 
   <section class="wrap criteria" id="criteria" aria-labelledby="criteria-h">
@@ -209,7 +234,7 @@ h2{
     <h2 id="disclosure-h">Disclosure</h2>
     <div class="prose">
       <p>Some links on this site are affiliate links. If you buy through one, I may earn a commission from the store, and you pay the same price either way.</p>
-      <p id="amazon-line" hidden>As an Amazon Associate I earn from qualifying purchases.</p>
+      <p id="amazon-line">As an Amazon Associate I earn from qualifying purchases.</p>
       <p>Nobody pays to be listed, and a commission never decides what makes the cut.</p>
       <p>Prices were checked on 14 November 2026. Stores change them often, so the price on the store's page is the one that counts.</p>
     </div>
@@ -218,273 +243,43 @@ h2{
 
 <footer class="wrap foot">
   <span class="wordmark">Worth Owning</span>
-  <span>© 2026 · Preview build. Letter tiles stand in for photos.</span>
+  <span>© 2026 · worthowning.net</span>
 </footer>
 
 <script>
-/* ------------------------------------------------------------------
-   YOUR PICKS. Edit this list and the page rebuilds itself.
-
-   brand, name   shown on the card
-   cat           one of the ids in CATS below
-   tags          any of "forever", "japan", "stainless"
-   price         a number, or null to show no price
-                 (keep null for Amazon links: Amazon does not allow
-                 hand-typed prices)
-   from          true shows "from $180" for items with several sizes
-   url           the product link
-   affiliate     true marks the link rel="sponsored" for search engines
-   image         path to a photo you have the right to use; leave out
-                 to show the letter tile
-   yours         true for picks you chose; these appear under "Your picks"
-   note, store   not shown on the cards; kept for product pages later
-   ------------------------------------------------------------------ */
-
-/* Your Amazon Associates tag, for example "yourname-20". Once set, it is
-   added to every amazon.com link and the Amazon line appears in the
-   disclosure. */
-var AMAZON_TAG = "dario0fa-20";
-
-var CATS = [
-  { id: "kitchen",  label: "Kitchen" },
-  { id: "coffee",   label: "Coffee" },
-  { id: "grooming", label: "Grooming" },
-  { id: "tools",    label: "Tools" },
-  { id: "carry",    label: "Carry" }
-];
-
-var TAGS = [
-  { id: "forever",   label: "Buy it forever" },
-  { id: "japan",     label: "Japanese" },
-  { id: "stainless", label: "Stainless steel" }
-];
-
-var PRODUCTS = [
-  /* ---- Your picks ---- */
-  { brand: "Green Bell", name: "Takumi no Waza Nail Clipper G-1205", cat: "grooming", price: null,
-    tags: ["forever", "japan", "stainless"], yours: true,
-    note: "Twice-sharpened stainless blades, made in Japan.", store: "Amazon",
-    url: "https://www.amazon.com/dp/B07HHZWF57" },
-  { brand: "Snow Peak", name: "Ti-Single 600 Cup", cat: "carry", price: null,
-    tags: ["forever", "japan"], yours: true,
-    note: "Single-wall titanium, 600 ml, safe over a flame.", store: "Amazon",
-    url: "https://www.amazon.com/dp/B06XX4G5XT" },
-  { brand: "Amazon", name: "Your pick, name needed", cat: null, price: null, tags: [], yours: true, pending: true,
-    note: "Waiting on the product name for this link.", store: "Amazon",
-    url: "https://a.co/d/00NiGoTN" },
-  { brand: "Amazon", name: "Your pick, name needed", cat: null, price: null, tags: [], yours: true, pending: true,
-    note: "Waiting on the product name for this link.", store: "Amazon",
-    url: "https://a.co/d/064VCq0W" },
-  { brand: "Amazon", name: "Your pick, name needed", cat: null, price: null, tags: [], yours: true, pending: true,
-    note: "Waiting on the product name for this link.", store: "Amazon",
-    url: "https://a.co/d/0490aFKa" },
-
-  /* ---- Suggestions: kitchen ---- */
-  { brand: "Fellow", name: "Stagg EKG Pro Electric Kettle", cat: "coffee", price: null,
-    tags: ["stainless"], yours: true,
-    note: "Gooseneck electric kettle for pour-over coffee and tea.", store: "Amazon",
-    url: "https://www.amazon.com/dp/B0BF7HJ8MX" },
-  { brand: "Tojiro", name: "DP Gyuto 210 mm", cat: "kitchen", price: null,
-    tags: ["forever", "japan", "stainless"],
-    note: "VG10 core in stainless cladding, made in Tsubame.", store: "Cutlery & More",
-    url: "https://cutleryandmore.com/collections/tojiro/products/tojiro-dp-chefs-knife-13709" },
-  { brand: "Toribe", name: "Kitchen Scissors KS-203", cat: "kitchen", price: 89,
-    tags: ["forever", "japan", "stainless"],
-    note: "All stainless. Comes apart to wash and sharpen.", store: "Japanese Taste",
-    url: "https://japanesetaste.com/products/toribe-scissors-kitchen-shears-ks-203" },
-  { brand: "All-Clad", name: "D3 Stainless 12-inch Fry Pan with Lid", cat: "kitchen", price: 149.99,
-    tags: ["forever", "stainless"],
-    note: "Tri-ply stainless, oven safe to 600°F.", store: "Macy's",
-    url: "https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035" },
-  { brand: "Lodge", name: "10.25-inch Cast Iron Skillet", cat: "kitchen", price: 34.95,
-    tags: ["forever"],
-    note: "Iron and oil, made in the USA.", store: "REI",
-    url: "https://www.rei.com/product/714234" },
-
-  /* ---- Suggestions: coffee ---- */
-  { brand: "Hario", name: "Switch Immersion Dripper 02", cat: "coffee", price: 44.5,
-    tags: ["japan"],
-    note: "Steeps like a French press, drains like a V60.", store: "Hario",
-    url: "https://www.hario-usa.com/collections/other/products/switch-immersion-dripper" },
-  { brand: "Kalita", name: "Wave 185 Stainless Dripper", cat: "coffee", price: 42,
-    tags: ["forever", "japan", "stainless"],
-    note: "Flat-bottom pour-over dripper, made in Japan.", store: "Espresso Parts",
-    url: "https://www.espressoparts.com/products/kalita-wave-stainless-steel-dripper-185" },
-
-  /* ---- Suggestions: grooming ---- */
-  { brand: "Feather", name: "AS-D2 Stainless Safety Razor", cat: "grooming", price: 239,
-    tags: ["forever", "japan", "stainless"],
-    note: "All-stainless razor, made in Seki.", store: "Pasteur Pharmacy",
-    url: "https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor" },
-
-  /* ---- Suggestions: tools ---- */
-  { brand: "Knipex", name: "Cobra XS Pliers", cat: "tools", price: 32.72,
-    tags: ["forever"],
-    note: "Four-inch pliers that grip like full-size ones.", store: "KC Tool",
-    url: "https://kctool.com/knipex-cobra-xs-pliers" },
-  { brand: "Olfa", name: "SVR-2 Stainless Knife", cat: "tools", price: 9.99,
-    tags: ["forever", "japan", "stainless"],
-    note: "Slim stainless snap-blade knife with a pocket clip.", store: "Olfa",
-    url: "https://olfa.com/products/9mm-svr-2-stainless-steel-auto-knife" },
-  { brand: "Engineer", name: "PZ-58 Screw Removal Pliers", cat: "tools", price: null,
-    tags: ["forever", "japan"],
-    note: "Jaws that grip and turn stripped screws.", store: "Engineer",
-    url: "https://www.engineertools-jp.com/product-page/pz-58-screw-removal-pliers-gt" },
-  { brand: "Okatsune", name: "103 Bypass Pruners", cat: "tools", price: 60.99,
-    tags: ["forever", "japan"],
-    note: "Yasuki steel pruners, made in Japan.", store: "Hardwick & Sons",
-    url: "https://hardwickandsons.com/products/japanese-okatsune-bypass-pruners-no-103-medium" },
-  { brand: "Silca", name: "Pista Plus Floor Pump", cat: "tools", price: 215,
-    tags: ["forever"],
-    note: "Steel barrel, leather gasket, built to be rebuilt.", store: "Silca",
-    url: "https://silca.cc/products/pista-plus-floor-pump" },
-
-  /* ---- Suggestions: carry ---- */
-  { brand: "Zojirushi", name: "Stainless Mug SM-KHE48, 16 oz", cat: "carry", price: 39.99,
-    tags: ["japan", "stainless"],
-    note: "Vacuum mug that holds heat for six hours.", store: "Zojirushi",
-    url: "https://store.zojirushi.com/products/smkhe48" },
-  { brand: "Zebra", name: "F-701 Ballpoint", cat: "carry", price: null,
-    tags: ["japan", "stainless"],
-    note: "Stainless from tip to clip, and refillable.", store: "Zebra",
-    url: "https://zebrapen.com/pages/f-701-all-metal-retractable-ballpoint" },
-  { brand: "Leatherman", name: "Wave Plus", cat: "carry", price: 129.95,
-    tags: ["forever", "stainless"],
-    note: "18 tools, made in Portland, 25-year warranty.", store: "Leatherman",
-    url: "https://www.leatherman.com/wave-plus" },
-  { brand: "Stanley", name: "Classic Legendary Bottle, 32 oz", cat: "carry", price: 39,
-    tags: ["forever", "stainless"],
-    note: "Steel vacuum bottle with a lifetime warranty.", store: "Al's",
-    url: "https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p" }
-];
-
+/* Filters only. The picks are written into the page by build.py. */
 (function () {
-  var state = { filter: "all" };
-  var grid = document.getElementById("grid");
-  var tabs = document.getElementById("tabs");
+  var tabs = document.querySelectorAll("#tabs .tab");
+  var items = document.querySelectorAll("#grid > li");
   var status = document.getElementById("status");
-
-  function el(tag, props, kids) {
-    var n = document.createElement(tag), k;
-    for (k in (props || {})) {
-      if (k === "text") n.textContent = props[k];
-      else if (k === "class") n.className = props[k];
-      else n.setAttribute(k, props[k]);
-    }
-    (kids || []).forEach(function (c) { if (c) n.appendChild(c); });
-    return n;
-  }
-
-  function find(list, id) {
-    for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i];
-    return null;
-  }
-
-  function matches(p, f) {
-    if (f === "all") return true;
-    if (f === "yours") return !!p.yours;
-    if (find(TAGS, f)) return (p.tags || []).indexOf(f) !== -1;
-    return p.cat === f;
-  }
-
-  function filterLabel(f) {
-    if (f === "yours") return "Your picks";
-    var x = find(TAGS, f) || find(CATS, f);
-    return x ? x.label : "the whole list";
-  }
-
-  function isAmazon(url) { return /^https:\/\/(www\.)?amazon\.com\//.test(url); }
-
-  function link(p) {
-    if (AMAZON_TAG && isAmazon(p.url)) {
-      return p.url + (p.url.indexOf("?") === -1 ? "?" : "&") + "tag=" + encodeURIComponent(AMAZON_TAG);
-    }
-    return p.url;
-  }
-
-  function money(p) {
-    var digits = Number.isInteger(p.price) ? 0 : 2;
-    var s = p.price.toLocaleString("en-US", {
-      style: "currency", currency: "USD",
-      minimumFractionDigits: digits, maximumFractionDigits: digits
+  function show(f) {
+    var n = 0;
+    Array.prototype.forEach.call(items, function (li) {
+      var ok = f === "all" ||
+        (f === "yours" && li.hasAttribute("data-yours")) ||
+        li.getAttribute("data-cat") === f ||
+        (" " + li.getAttribute("data-tags") + " ").indexOf(" " + f + " ") !== -1;
+      li.hidden = !ok;
+      if (ok) n++;
     });
-    return (p.from ? "from " : "") + s;
-  }
-
-  /* Keeps model numbers such as KS-203 from splitting across lines. */
-  function nameNode(text) {
-    var h = el("h3", { class: "name" });
-    text.split(" ").forEach(function (w, i) {
-      if (i) h.appendChild(document.createTextNode(" "));
-      h.appendChild(w.indexOf("-") === -1 ? document.createTextNode(w) : el("span", { class: "nb", text: w }));
+    Array.prototype.forEach.call(tabs, function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-filter") === f));
     });
-    return h;
+    status.textContent = "Showing " + n + " picks.";
   }
-
-  function card(p) {
-    var cat = find(CATS, p.cat);
-    var art = p.image
-      ? el("img", { src: p.image, alt: "", loading: "lazy" })
-      : el("span", { class: "tile-mono", text: p.pending ? "?" : p.brand.charAt(0) });
-    var out = el("span", { class: "out", "aria-hidden": "true" });
-    out.innerHTML = '<svg viewBox="0 0 10 10" width="10" height="10"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>';
-    var paid = p.affiliate || (AMAZON_TAG && isAmazon(p.url));
-    /* On your own domain you can add target="_blank" here. */
-    var a = el("a", {
-      class: "card", href: link(p),
-      rel: paid ? "sponsored nofollow noopener" : "noopener"
-    }, [
-      el("div", { class: "art", "aria-hidden": "true" }, [art]),
-      out,
-      el("div", { class: "info" }, [
-        el("p", { class: "meta", text: p.brand + (cat ? " · " + cat.label : "") }),
-        el("div", { class: "row" }, [
-          nameNode(p.name),
-          p.price == null ? null : el("p", { class: "price", text: money(p) })
-        ])
-      ]),
-      el("span", { class: "sr-only", text: "View at " + p.store })
-    ]);
-    return el("li", null, [a]);
-  }
-
-  function render() {
-    var list = PRODUCTS.filter(function (p) { return matches(p, state.filter); });
-    grid.textContent = "";
-    list.forEach(function (p) { grid.appendChild(card(p)); });
-    Array.prototype.forEach.call(tabs.querySelectorAll(".tab"), function (b) {
-      b.setAttribute("aria-pressed", String(b.getAttribute("data-filter") === state.filter));
-    });
-    status.textContent = "Showing " + list.length + " picks in " + filterLabel(state.filter) + ".";
-  }
-
-  function tab(id, label) {
-    var b = el("button", { class: "tab", type: "button", "data-filter": id, "aria-pressed": "false", text: label });
-    b.addEventListener("click", function () {
-      state.filter = id;
-      try { if (location.hash !== "#" + id) location.hash = id; } catch (e) {}
-      render();
-    });
-    return b;
-  }
-
-  function readHash() {
+  function fromHash() {
     var h = (location.hash || "").replace("#", "");
-    if (h === "all" || h === "yours" || find(TAGS, h) || find(CATS, h)) { state.filter = h; return true; }
-    return false;
+    for (var i = 0; i < tabs.length; i++) if (tabs[i].getAttribute("data-filter") === h) { show(h); return; }
   }
-
-  tabs.appendChild(tab("all", "All"));
-  tabs.appendChild(tab("yours", "Your picks"));
-  TAGS.forEach(function (t) { tabs.appendChild(tab(t.id, t.label)); });
-  tabs.appendChild(el("span", { class: "sep", "aria-hidden": "true" }));
-  CATS.forEach(function (c) { tabs.appendChild(tab(c.id, c.label)); });
-
-  if (AMAZON_TAG) document.getElementById("amazon-line").hidden = false;
-  window.addEventListener("hashchange", function () { if (readHash()) render(); });
-
-  readHash();
-  render();
+  Array.prototype.forEach.call(tabs, function (b) {
+    b.addEventListener("click", function () {
+      var f = b.getAttribute("data-filter");
+      try { if (location.hash !== "#" + f) location.hash = f; } catch (e) {}
+      show(f);
+    });
+  });
+  window.addEventListener("hashchange", fromHash);
+  fromHash();
 })();
 </script>
 </body>
