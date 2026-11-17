@@ -157,13 +157,25 @@ home_schema = {
     ],
 }
 
+# One footer for every page: the affiliate notice lives here, not in its own section.
+FOOTER = (
+    '<footer class="wrap foot">\n'
+    '  <p class="notice">Some links are affiliate links, so I may earn a commission if you buy through them.%s '
+    'Prices were entered by hand in %s and may have changed. '
+    'I back what I share, and only include products I use, trust or see real value in.%s</p>\n'
+    '  <div class="foot-row"><a class="wordmark" href="/">Worth Owning</a>'
+    '<span>© 2026 · worthowning.net</span></div>\n'
+    '</footer>') % (
+    " As an Amazon Associate I earn from qualifying purchases." if TAG else "",
+    e(CHECKED),
+    " This site uses Google Analytics to count visits." if data.get("ga_id") else "")
+
 home = HOME
 for k, v in {
     "{{CSS}}": CSS,
     "{{TABS}}": "".join(tabs),
     "{{GRID}}": "\n      " + "\n      ".join(items) + "\n    ",
-    "{{AMAZON_HIDDEN}}": "" if TAG else " hidden",
-    "{{PRICES_CHECKED}}": e(CHECKED),
+    "{{FOOTER}}": FOOTER,
     "{{SCHEMA}}": json_ld(home_schema),
     "{{ANALYTICS}}": analytics(),
 }.items():
@@ -222,7 +234,7 @@ for p in live:
         if TAG and is_amazon(p.get("url")):
             note.append("As an Amazon Associate I earn from qualifying purchases.")
         if note:
-            buy += '<p class="fineprint">%s <a href="/#disclosure">Details</a></p>' % " ".join(note)
+            buy += '<p class="fineprint">%s</p>' % " ".join(note)
 
     more = related(p)
     more_html = ""
@@ -264,6 +276,7 @@ for p in live:
         "{{WHY}}": why,
         "{{BUY}}": buy,
         "{{MORE}}": more_html,
+        "{{FOOTER}}": FOOTER,
     }.items():
         out = out.replace(k, v)
     os.makedirs("picks/" + p["slug"], exist_ok=True)

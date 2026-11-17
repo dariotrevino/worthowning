@@ -152,17 +152,15 @@ h2{
 .tests h3{font:600 .95rem/1.3 var(--font-body)}
 .tests p{margin-top:4px;max-width:36ch;font-size:.92rem;color:var(--muted)}
 
-/* Disclosure */
-.disclosure{display:grid;gap:18px 28px;margin-top:clamp(64px,9vw,120px);padding-top:clamp(40px,6vw,72px);border-top:1px solid var(--line)}
-@media (min-width:720px){.disclosure{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}}
 .prose{display:grid;gap:12px;max-width:62ch;font-size:.95rem;color:var(--muted)}
 
 /* Footer */
 .foot{
-  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;
   margin-top:clamp(64px,9vw,120px);padding-top:22px;padding-bottom:40px;
   border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);
 }
+.foot .notice{max-width:86ch;line-height:1.55}
+.foot-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;margin-top:22px}
 .foot .wordmark{color:var(--ink)}
 
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}

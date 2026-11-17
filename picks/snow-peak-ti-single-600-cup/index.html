@@ -179,17 +179,15 @@ h2{
 .tests h3{font:600 .95rem/1.3 var(--font-body)}
 .tests p{margin-top:4px;max-width:36ch;font-size:.92rem;color:var(--muted)}
 
-/* Disclosure */
-.disclosure{display:grid;gap:18px 28px;margin-top:clamp(64px,9vw,120px);padding-top:clamp(40px,6vw,72px);border-top:1px solid var(--line)}
-@media (min-width:720px){.disclosure{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}}
 .prose{display:grid;gap:12px;max-width:62ch;font-size:.95rem;color:var(--muted)}
 
 /* Footer */
 .foot{
-  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;
   margin-top:clamp(64px,9vw,120px);padding-top:22px;padding-bottom:40px;
   border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);
 }
+.foot .notice{max-width:86ch;line-height:1.55}
+.foot-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;margin-top:22px}
 .foot .wordmark{color:var(--ink)}
 
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -228,7 +226,6 @@ h2{
   <nav aria-label="Sections">
     <a href="/#picks">All picks</a>
     <a href="/#criteria">Criteria</a>
-    <a href="/#disclosure">Disclosure</a>
   </nav>
 </header>
 
@@ -241,7 +238,7 @@ h2{
       <h1><span class="nb">Ti-Single</span> 600 Cup</h1>
       <p class="chips"><a href="/#forever">Buy it forever</a><a href="/#japan">Japanese</a></p>
       
-      <div class="buy"><a class="btn" href="https://www.amazon.com/dp/B06XX4G5XT?tag=dario0fa-20" rel="sponsored nofollow noopener">View at Amazon<svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a><p class="price">$29.95<span class="when">when checked in mid November 2026</span></p></div><p class="fineprint">I may earn a commission if you buy through this link, at no extra cost to you. As an Amazon Associate I earn from qualifying purchases. <a href="/#disclosure">Details</a></p>
+      <div class="buy"><a class="btn" href="https://www.amazon.com/dp/B06XX4G5XT?tag=dario0fa-20" rel="sponsored nofollow noopener">View at Amazon<svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M2 8 8 2M3.2 2H8v4.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a><p class="price">$29.95<span class="when">when checked in mid November 2026</span></p></div><p class="fineprint">I may earn a commission if you buy through this link, at no extra cost to you. As an Amazon Associate I earn from qualifying purchases.</p>
     </div>
   </article>
 
@@ -249,8 +246,8 @@ h2{
 </main>
 
 <footer class="wrap foot">
-  <a class="wordmark" href="/">Worth Owning</a>
-  <span>© 2026 · worthowning.net</span>
+  <p class="notice">Some links are affiliate links, so I may earn a commission if you buy through them. As an Amazon Associate I earn from qualifying purchases. Prices were entered by hand in mid November 2026 and may have changed. I back what I share, and only include products I use, trust or see real value in. This site uses Google Analytics to count visits.</p>
+  <div class="foot-row"><a class="wordmark" href="/">Worth Owning</a><span>© 2026 · worthowning.net</span></div>
 </footer>
 </body>
 </html>

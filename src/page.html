@@ -35,7 +35,6 @@
   <nav aria-label="Sections">
     <a href="#picks">Picks</a>
     <a href="#criteria">Criteria</a>
-    <a href="#disclosure">Disclosure</a>
   </nav>
 </header>
 
@@ -51,7 +50,7 @@
       <div class="tabs" id="tabs" role="group" aria-label="Filter the list">{{TABS}}</div>
     </div>
     <div class="subrow">
-      <p class="fineprint">I may earn a commission when you buy through these links. <a href="#disclosure">Details</a></p>
+      <p class="fineprint">I may earn a commission when you buy through these links.</p>
       <label class="sort">Sort <select id="sort">
         <option value="featured">Featured</option>
         <option value="asc">Price, low to high</option>
@@ -65,28 +64,15 @@
   <section class="wrap criteria" id="criteria" aria-labelledby="criteria-h">
     <h2 id="criteria-h">Three tests before anything gets listed</h2>
     <ul class="tests">
-      <li><h3>Lived with</h3><p>I've owned it or used it long enough to know where it falls short.</p></li>
-      <li><h3>Earns its place</h3><p>It fixes an annoyance that kept coming back.</p></li>
-      <li><h3>Would rebuy</h3><p>If it broke tomorrow, I'd order the same one again.</p></li>
+      <li><h3>Built to last</h3><p>Good materials, honest construction and a maker with a track record. Ideally you only buy it once.</p></li>
+      <li><h3>Earns its place</h3><p>It does its job well enough that you stop thinking about it.</p></li>
+      <li><h3>Used or vouched for</h3><p>Some of these I own and use. The rest I trust enough to recommend to a friend.</p></li>
     </ul>
   </section>
 
-  <section class="wrap disclosure" id="disclosure" aria-labelledby="disclosure-h">
-    <h2 id="disclosure-h">Disclosure</h2>
-    <div class="prose">
-      <p>Some links on this site are affiliate links. If you buy through one, I may earn a commission from the store, and you pay the same price either way.</p>
-      <p id="amazon-line"{{AMAZON_HIDDEN}}>As an Amazon Associate I earn from qualifying purchases.</p>
-      <p>Nobody pays to be listed, and a commission never decides what makes the cut.</p>
-      <p>Prices were checked in {{PRICES_CHECKED}}. Stores change them often, so the price on the store's page is the one that counts.</p>
-      <p>This site uses Google Analytics to count visits. It sets cookies and does not tell me who you are.</p>
-    </div>
-  </section>
 </main>
 
-<footer class="wrap foot">
-  <span class="wordmark">Worth Owning</span>
-  <span>© 2026 · worthowning.net</span>
-</footer>
+{{FOOTER}}
 
 <script>
 /* Filters only. The picks are written into the page by build.py. */
