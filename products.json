@@ -61,7 +61,10 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B07HHZWF57",
       "image": "images/green-bell-g-1205.webp",
-      "why": []
+      "why": [
+        "A nail clipper made by Green Bell in Seki, Japan, a town known for its blades. The curved stainless steel edges are sharpened twice, the lever is solid zinc alloy, and the file on the back is etched stainless steel.",
+        "Drugstore clippers dull and wobble within a year or two. This one costs a little more once and then just keeps working."
+      ]
     },
     {
       "brand": "Snow Peak",
@@ -77,7 +80,10 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B06XX4G5XT",
       "image": "images/snow-peak-ti-single.webp",
-      "why": []
+      "why": [
+        "A 600 ml titanium cup that weighs about 88 grams, made in Japan by Snow Peak. The handles fold flat, and the cup can go straight onto a stove to heat water.",
+        "Titanium doesn't rust, doesn't flavor your coffee, and shrugs off years of being tossed in a bag. It works as a camp pot, a travel mug, or a desk cup, and Snow Peak backs it with a limited lifetime warranty."
+      ]
     },
     {
       "brand": "Fellow",
@@ -92,7 +98,10 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B0BF7HJ8MX",
       "image": "images/fellow-stagg-ekg-pro.webp",
-      "why": []
+      "why": [
+        "An electric gooseneck kettle built for pour over. PID control holds the water to the exact degree you set, anywhere from 135°F to 212°F, and the spout pours slow and steady enough to control every bloom.",
+        "The 304 stainless steel body, counterweighted handle and built in brew timer make it as good on the counter as it is to use. It gets firmware updates over Wi-Fi, and Fellow gives a 2 year warranty, or 3 years if you register it."
+      ]
     },
     {
       "brand": "Olfa",
@@ -109,7 +118,10 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B0006O87O6",
       "image": "images/olfa-svr-2.webp",
-      "why": []
+      "why": [
+        "A slim 9 mm snap off knife from Olfa with a stainless steel handle and blade channel. The blade locks automatically wherever you stop the slider, with two small clicks per segment for fine depth control.",
+        "The pocket clip doubles as the blade snapper, and new blades slide in without tools. Stainless means it doesn't rust in a toolbox or a damp garage, and it's the knife to keep in a drawer for every box and package."
+      ]
     },
     {
       "brand": "Marvis",
@@ -122,7 +134,10 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B000MEKG30",
       "image": "images/marvis-whitening-mint.webp",
-      "why": []
+      "why": [
+        "Toothpaste from Florence, Italy, where the brand was registered in 1958 and is still made by a family owned company. Whitening Mint is the clean, sharp mint of the range, built to lift surface stains.",
+        "It's a small, daily luxury: an everyday routine done a little better, in a tube that looks good on the sink."
+      ]
     },
     {
       "brand": "Zippo",
@@ -137,7 +152,10 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B001E5FLT0",
       "image": "images/zippo-brushed-chrome.webp",
-      "why": []
+      "why": [
+        "The brushed chrome Zippo, a finish the company introduced in 1933 and still its most popular. All metal, windproof, refillable, and made in the USA.",
+        "Zippo's guarantee is simple: it works or they fix it free, for life. The finish isn't covered, so it'll pick up scratches, but the lighter itself is built to be passed down."
+      ]
     },
     {
       "price": 26.25,
@@ -153,7 +171,10 @@
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B0H4NN6CW7",
       "image": "images/stanley-textured-tumbler.webp",
-      "why": []
+      "why": [
+        "Stanley's 20 oz Everyday Tumbler with a faceted exterior that catches the light. Double wall vacuum insulated 18/8 stainless steel keeps drinks cold for about 6 hours and iced for about 24.",
+        "A splash resistant slider lid, a soft silicone base, and a size that fits most car cupholders. It's dishwasher safe and covered by Stanley's Built for Life lifetime warranty."
+      ]
     },
     {
       "price": 21,
@@ -168,7 +189,10 @@
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B0DTN46Q7Z",
       "image": "images/stanley-quick-flip-go.webp",
-      "why": []
+      "why": [
+        "A 36 oz insulated bottle with a trigger lid: press the button and the spout pops open, so you can drink with one hand while driving or carrying something.",
+        "Double wall vacuum insulated 18/8 stainless steel, leakproof enough to throw in a work bag, dishwasher safe, and narrow enough for most cupholders. Stanley's lifetime warranty covers it."
+      ]
     },
     {
       "price": 25.28,
@@ -184,7 +208,10 @@
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B08BCR9JRK",
       "image": "images/stanley-classic-mug.webp",
-      "why": []
+      "why": [
+        "A 12 oz camp mug in double wall vacuum insulated 18/8 stainless steel, with a press fit Tritan lid. It keeps coffee hot for about an hour and a half and drinks iced for about 15 hours.",
+        "It fits under most single cup coffee makers and handles campfires, tailgates and desks equally well. Like everything Stanley makes, it's covered by the Built for Life lifetime warranty."
+      ]
     },
     {
       "price": 400,
@@ -197,7 +224,10 @@
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B0DT4MX1YT",
       "image": "images/samsonite-proxis-carry-on.webp",
-      "why": []
+      "why": [
+        "A 22 x 14 x 9 inch hardside carry on that weighs about 4.6 pounds. The shell is Roxkin, Samsonite's multi layered material that is light, strong, and bounces back into shape.",
+        "Double suspension spinner wheels, a TSA lock, a hidden expansion zipper, and a built in USB port. Samsonite backs it with a limited 10 year global warranty."
+      ]
     },
     {
       "price": 5.69,
@@ -210,7 +240,10 @@
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B00BKVPV8Y",
       "image": "images/nite-ize-slidelock.webp",
-      "why": []
+      "why": [
+        "A Nite Ize carabiner whose gate locks with a small slider, so keys and gear stay clipped until you decide to unlock it.",
+        "It's the cheapest way to stop losing keys off a belt loop or bag strap. Nite Ize stands behind it with their Worry Free Guarantee. Not rated for climbing."
+      ]
     },
     {
       "price": 5.69,
@@ -225,7 +258,10 @@
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B01D3OEZGY",
       "image": "images/nite-ize-s-biner-slidelock-steel.webp",
-      "why": []
+      "why": [
+        "A stainless steel S-Biner with two gates that each lock on their own with a slide. Size 3 is about 2.7 inches long, weighs half an ounce, and is rated to 25 pounds.",
+        "One side holds your keys, the other clips to a belt loop or bag, and neither opens until you slide it open. Stainless steel means no rust and no flaking finish. Not for climbing."
+      ]
     },
     {
       "price": 143,
@@ -238,7 +274,10 @@
       "cat": "tech",
       "url": "https://www.amazon.com/dp/B0BD7LH9ML",
       "image": "images/nomad-base-one-max.webp",
-      "why": []
+      "why": [
+        "A 3 in 1 wireless charger built from solid metal and glass. It charges an iPhone on the MagSafe puck, an Apple Watch on its own fast charger, and AirPods on a dedicated spot, all at once.",
+        "It's heavy enough to stay put when you grab your phone, with a non slip rubber base. One catch: it needs a 30W USB-C power adapter, which isn't in the box."
+      ]
     },
     {
       "tags": [],
@@ -250,7 +289,11 @@
       "price": 79,
       "url": "https://www.amazon.com/dp/B0FPNW4T91",
       "slug": "nomad-traditional-leather-case-iphone-17-pro",
-      "image": "images/nomad-traditional-leather-case.webp"
+      "image": "images/nomad-traditional-leather-case.webp",
+      "why": [
+        "A full grain leather case that wraps the whole iPhone 17 Pro. Nomad offers it in Horween leather from Chicago and in its own Camino leather, and both develop a patina over time.",
+        "A raised lip protects the screen, magnets work with MagSafe chargers, and the Camera Control button is built in. It looks better a year in than on day one, which is the point of leather."
+      ]
     },
     {
       "price": 19,
@@ -263,7 +306,10 @@
       "cat": "tech",
       "url": "https://www.amazon.com/dp/B0DCH8VDXF",
       "image": "images/apple-earpods-usb-c.webp",
-      "why": []
+      "why": [
+        "Apple's wired EarPods with a USB-C plug, for iPhone 15 and later, iPads, Macs and most USB-C devices. The inline remote handles volume, playback and calls, and there's a mic for calls.",
+        "No battery to wear out, nothing to charge, nothing to pair. They're cheap, sweat and water resistant, and they just work every time you plug them in."
+      ]
     },
     {
       "price": 234.95,
@@ -278,7 +324,10 @@
       "cat": "wear",
       "url": "https://www.amazon.com/dp/B0D523G1BG",
       "image": "images/g-shock-gbm2100a.webp",
-      "why": []
+      "why": [
+        "The G-Steel version of the octagonal 2100 series, nicknamed the CasiOak. The bezel is forged, cut and polished stainless steel over a glass fiber reinforced resin case, with a light blue grid dial and lume on the indices.",
+        "Tough Solar means no battery changes, Bluetooth syncs the time from your phone, and it's water resistant to 200 meters. It's the toughest kind of watch you can still wear with a button down."
+      ]
     },
     {
       "price": 850,
@@ -293,7 +342,10 @@
       "cat": "wear",
       "url": "https://www.amazon.com/dp/B094YLBC2F",
       "image": "images/tissot-prx-automatic.webp",
-      "why": []
+      "why": [
+        "A 40 mm Swiss automatic with an integrated steel bracelet, based on a Tissot design from 1978. The case is 316L stainless steel under a sapphire crystal, water resistant to 100 meters.",
+        "The Powermatic 80 movement runs about 80 hours on a full wind, so it survives a weekend off the wrist, and its Nivachron hairspring resists magnetism. It's one of the best values in Swiss mechanical watches."
+      ]
     },
     {
       "price": 42.99,
@@ -306,7 +358,10 @@
       "cat": "wear",
       "url": "https://www.amazon.com/dp/B003DTLU8Q",
       "image": "images/london-fog-auburn-jacket.webp",
-      "why": []
+      "why": [
+        "A lightweight zip front jacket from London Fog, a brand making outerwear since 1923. Water resistant microfiber shell, mesh lining, a plaid lined collar, snap cuffs, and a swing back for freedom of movement.",
+        "Two double entry pockets outside plus interior pockets for a wallet or passport. It's machine washable and goes from errands to travel to the course without looking out of place."
+      ]
     },
     {
       "tags": [
@@ -321,7 +376,10 @@
       "price": 38,
       "url": "https://www.amazon.com/dp/B000X4J2H0",
       "image": "images/knipex-cobra-250.webp",
-      "why": []
+      "why": [
+        "Knipex's 10 inch Cobra pliers, made in Germany from forged, oil hardened chrome vanadium steel. Push the button, slide the jaws onto the work, and they lock to size: 25 positions, up to 2 inch pipe.",
+        "The jaws self lock on pipes and nuts so they don't slip, the teeth are hardened to about 61 HRC, and a pinch guard protects your fingers. If you only buy one pair of adjustable pliers, buy these."
+      ]
     },
     {
       "brand": "Lodge",
@@ -336,7 +394,10 @@
       "url": "https://www.amazon.com/dp/B00G2XGC88",
       "yours": true,
       "image": "images/lodge-skillet.webp",
-      "why": []
+      "why": [
+        "A seasoned cast iron skillet from Lodge, which has made cast iron in South Pittsburg, Tennessee since 1896 and is still family owned. It ships seasoned and ready to cook, with a holder for the hot handle.",
+        "It sears, bakes, and goes from stovetop to oven to campfire. Cast iron has no coating to wear off; it only gets better with use, and a neglected one can always be scrubbed and reseasoned."
+      ]
     },
     {
       "tags": [
@@ -351,7 +412,10 @@
       "price": 99,
       "url": "https://www.amazon.com/dp/B0B2PJJFWP",
       "image": "images/ridge-wallet.webp",
-      "why": []
+      "why": [
+        "A minimalist wallet made of two metal plates held together by elastic. The patented design holds 1 to 12 cards without stretching out, and it blocks RFID.",
+        "The screws and elastic are replaceable, and Ridge backs it with a lifetime warranty. It forces you to carry only what you need, which is half the reason to own one."
+      ]
     },
     {
       "tags": [],
@@ -364,7 +428,10 @@
       "price": 119.99,
       "url": "https://www.amazon.com/dp/B0FC5SJNQX",
       "image": "images/logitech-mx-master-4.webp",
-      "why": []
+      "why": [
+        "Logitech's flagship productivity mouse. New in this generation: a haptic panel under the thumb and an Actions Ring, an on screen menu of shortcuts you open with a press of the thumb.",
+        "It keeps what made the MX Master line great: a sculpted right handed shape, quiet clicks, 8,000 DPI tracking, pairing with up to three computers, and a USB-C charge that lasts up to 70 days."
+      ]
     },
     {
       "tags": [],
@@ -377,7 +444,10 @@
       "price": 20.95,
       "url": "https://www.amazon.com/dp/B09WTTTW2N",
       "image": "images/joyjolt-savor-glasses.webp",
-      "why": []
+      "why": [
+        "Small 5.4 oz double wall glasses, mouth blown from borosilicate glass. The drink looks like it's floating inside the cup.",
+        "The air gap keeps espresso hot while the outside stays cool to hold, and borosilicate handles heat better than ordinary glass. They're dishwasher safe and make a morning espresso feel like an occasion."
+      ]
     },
     {
       "tags": [
@@ -392,7 +462,10 @@
       "price": 75.6,
       "url": "https://www.amazon.com/dp/B0015ZP2AC",
       "image": "images/fisher-space-pen.webp",
-      "why": []
+      "why": [
+        "The AG7, Fisher's original Astronaut pen. NASA tested it for two years before flying it on Apollo 7 in 1968, and it's been used on Shuttle missions and the International Space Station since.",
+        "A solid brass body with hard chrome plating, made in the USA. The pressurized cartridge writes upside down, underwater and in extreme cold or heat, and the design hasn't needed to change in over 50 years."
+      ]
     },
     {
       "tags": [
@@ -407,7 +480,10 @@
       "price": 599,
       "url": "https://www.amazon.com/dp/B0D45PK5V4",
       "image": "images/ninja-luxe-cafe.webp",
-      "why": []
+      "why": [
+        "A 3 in 1 machine that makes espresso, drip coffee and cold brew from whole beans. It has a built in conical burr grinder with 25 settings and a built in scale that doses by weight.",
+        "Barista Assist recommends a grind size and adjusts brew temperature and pressure for you, and the hands free frother steams and whisks milk on its own. It's an easy way to get café quality espresso at home without learning to dial in a manual machine."
+      ]
     },
     {
       "tags": [
@@ -423,7 +499,10 @@
       "price": 100.98,
       "url": "https://www.amazon.com/dp/B09Z7XMSFX",
       "image": "images/toyo-st-350-toolbox.webp",
-      "why": []
+      "why": [
+        "A two level cantilever toolbox made in Osaka by Toyo Steel, the company that made the world's first seamless steel toolbox in 1969. The two trays swing out on steel arms to open up the compartment below.",
+        "Eight removable dividers organize the trays, the lid takes a small padlock, and the epoxy finished steel will outlast every plastic box you've owned. It's just as good for art supplies or bonsai tools as for hardware."
+      ]
     },
     {
       "tags": [
@@ -438,7 +517,10 @@
       "price": 19.95,
       "url": "https://www.amazon.com/dp/B08MWX9WRB",
       "image": "images/darn-tough-run-no-show.webp",
-      "why": []
+      "why": [
+        "Ultra lightweight no show running socks knit from merino wool, nylon and Lycra at Darn Tough's mills in Vermont. A small tab at the heel guards your Achilles from the shoe collar.",
+        "Merino dries fast, breathes, and doesn't hold odor. Darn Tough's unconditional lifetime guarantee means if a pair ever wears through, they replace it."
+      ]
     },
     {
       "tags": [],
@@ -451,7 +533,10 @@
       "price": 64.99,
       "url": "https://www.amazon.com/dp/B09Y91CSXD",
       "image": "images/hoshanho-chef-knife.webp",
-      "why": []
+      "why": [
+        "An 8 inch Japanese style chef's knife in 10Cr15CoMoV high carbon stainless steel, hardened to about 60 HRC and sharpened to a thin edge, with a pakkawood handle.",
+        "It's the budget pick here: a sharp, well balanced blade for far less than the big names. Hand wash it, dry it, and keep it on a honing rod to hold that edge."
+      ]
     },
     {
       "brand": "Kalita",
@@ -466,7 +551,10 @@
       ],
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B000X1AM0Y",
-      "why": [],
+      "why": [
+        "A stainless steel pour over dripper made in Japan by Kalita. The flat bottom and three small holes control the flow, so the coffee bed extracts evenly even if your pour isn't perfect.",
+        "The 185 brews 2 to 4 cups and uses Kalita's wave filters, which barely touch the walls to keep temperature stable. Stainless steel won't crack like ceramic or glass, and it's dishwasher safe."
+      ],
       "yours": true,
       "image": "images/kalita-wave-185.webp"
     },
@@ -482,7 +570,10 @@
       ],
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B002L6HJAA",
-      "why": [],
+      "why": [
+        "Screw removal pliers from Engineer, a tool maker in Osaka. Vertical grooves in the jaws bite into a screw head from the side, so you can twist out stripped, rusted or tamper proof screws that a screwdriver can't move.",
+        "Made in Japan from hardened carbon steel, it fits screw heads from 3 to 9.5 mm and works as a regular pair of gripping pliers the rest of the time. One stripped screw is all it takes to justify it."
+      ],
       "image": "images/engineer-pz-58.webp",
       "yours": true
     },
@@ -498,7 +589,10 @@
       ],
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B079MJBP21",
-      "why": [],
+      "why": [
+        "Leatherman's best selling multi tool: 18 tools, with the blades, saw and file reachable from the outside without opening the pliers. Everything opens with one hand and locks in place.",
+        "The wire cutters are replaceable when they eventually dull, the bit driver swaps tips for different screws, and every Wave Plus comes from Leatherman's factory in Portland, Oregon with a 25 year warranty."
+      ],
       "yours": true,
       "image": "images/leatherman-wave-plus.webp"
     }
