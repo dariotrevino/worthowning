@@ -239,6 +239,19 @@
     },
     {
       "price": null,
+      "tags": [
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Tissot",
+      "name": "PRX Powermatic 80",
+      "cat": "wear",
+      "url": "https://www.amazon.com/dp/B094YLBC2F",
+      "image": "images/tissot-prx-automatic.webp"
+    },
+    {
+      "price": null,
       "tags": [],
       "yours": true,
       "store": "Amazon",
