@@ -455,21 +455,24 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B000X1AM0Y",
       "why": [],
-      "yours": true
+      "yours": true,
+      "image": "images/kalita-wave-185.webp"
     },
     {
       "brand": "Engineer",
       "name": "PZ-58 Screw Removal Pliers",
       "slug": "engineer-pz-58-screw-removal-pliers",
       "cat": "tools",
-      "price": null,
+      "price": 20.79,
       "tags": [
         "forever",
         "japan"
       ],
-      "store": "Engineer",
-      "url": "https://www.engineertools-jp.com/product-page/pz-58-screw-removal-pliers-gt",
-      "why": []
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B002L6HJAA",
+      "why": [],
+      "image": "images/engineer-pz-58.webp",
+      "yours": true
     },
     {
       "brand": "Leatherman",
@@ -484,7 +487,8 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B079MJBP21",
       "why": [],
-      "yours": true
+      "yours": true,
+      "image": "images/leatherman-wave-plus.webp"
     }
   ],
   "ga_id": "G-7B37GYLTFW"
