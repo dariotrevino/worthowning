@@ -363,6 +363,19 @@
       "image": "images/toyo-st-350-toolbox.webp"
     },
     {
+      "tags": [
+        "forever"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Darn Tough",
+      "name": "Run No Show Tab Socks, Ultra-Lightweight",
+      "cat": "wear",
+      "price": 19.95,
+      "url": "https://www.amazon.com/dp/B08MWX9WRB",
+      "image": "images/darn-tough-run-no-show.webp"
+    },
+    {
       "brand": "Amazon",
       "name": "Your pick, name needed",
       "cat": null,
