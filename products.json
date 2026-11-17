@@ -349,6 +349,20 @@
       "image": "images/ninja-luxe-cafe.webp"
     },
     {
+      "tags": [
+        "forever",
+        "japan"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Toyo",
+      "name": "ST-350 Steel 2-Tier Tool Box",
+      "cat": "tools",
+      "price": 100.98,
+      "url": "https://www.amazon.com/dp/B09Z7XMSFX",
+      "image": "images/toyo-st-350-toolbox.webp"
+    },
+    {
       "brand": "Amazon",
       "name": "Your pick, name needed",
       "cat": null,
@@ -455,17 +469,6 @@
       ],
       "store": "Pasteur Pharmacy",
       "url": "https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor"
-    },
-    {
-      "brand": "Knipex",
-      "name": "Cobra XS Pliers",
-      "cat": "tools",
-      "price": 32.72,
-      "tags": [
-        "forever"
-      ],
-      "store": "KC Tool",
-      "url": "https://kctool.com/knipex-cobra-xs-pliers"
     },
     {
       "brand": "Engineer",
