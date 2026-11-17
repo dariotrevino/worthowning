@@ -1,41 +1,465 @@
 {
   "amazon_tag": "dario0fa-20",
   "categories": [
-    {"id": "kitchen", "label": "Kitchen"},
-    {"id": "coffee", "label": "Coffee"},
-    {"id": "grooming", "label": "Grooming"},
-    {"id": "tools", "label": "Tools"},
-    {"id": "carry", "label": "Carry"}
+    {
+      "id": "kitchen",
+      "label": "Kitchen"
+    },
+    {
+      "id": "coffee",
+      "label": "Coffee"
+    },
+    {
+      "id": "grooming",
+      "label": "Grooming"
+    },
+    {
+      "id": "tools",
+      "label": "Tools"
+    },
+    {
+      "id": "carry",
+      "label": "Carry"
+    },
+    {
+      "id": "tech",
+      "label": "Tech"
+    },
+    {
+      "id": "wear",
+      "label": "Wear"
+    }
   ],
   "tags": [
-    {"id": "forever", "label": "Buy it forever"},
-    {"id": "japan", "label": "Japanese"},
-    {"id": "stainless", "label": "Stainless steel"}
+    {
+      "id": "forever",
+      "label": "Buy it forever"
+    },
+    {
+      "id": "japan",
+      "label": "Japanese"
+    },
+    {
+      "id": "stainless",
+      "label": "Stainless steel"
+    }
   ],
   "products": [
-    {"brand": "Green Bell", "name": "Takumi no Waza Nail Clipper G-1205", "cat": "grooming", "price": null, "tags": ["forever", "japan", "stainless"], "yours": true, "store": "Amazon", "url": "https://www.amazon.com/dp/B07HHZWF57", "image": "images/green-bell-g-1205.jpg"},
-    {"brand": "Snow Peak", "name": "Ti-Single 600 Cup", "cat": "carry", "price": null, "tags": ["forever", "japan"], "yours": true, "store": "Amazon", "url": "https://www.amazon.com/dp/B06XX4G5XT", "image": "images/snow-peak-ti-single.jpg"},
-    {"brand": "Fellow", "name": "Stagg EKG Pro Electric Kettle", "cat": "coffee", "price": null, "tags": ["stainless"], "yours": true, "store": "Amazon", "url": "https://www.amazon.com/dp/B0BF7HJ8MX", "image": "images/fellow-stagg-ekg-pro.jpg"},
-    {"brand": "Olfa", "name": "SVR-2 Stainless Knife", "cat": "tools", "price": 9.99, "tags": ["forever", "japan", "stainless"], "yours": true, "store": "Olfa", "url": "https://olfa.com/products/9mm-svr-2-stainless-steel-auto-knife", "image": "images/olfa-svr-2.jpg"},
-    {"brand": "Marvis", "name": "Whitening Mint Toothpaste", "cat": "grooming", "price": null, "tags": [], "yours": true, "store": "", "url": "", "image": "images/marvis-whitening-mint.jpg"},
-    {"brand": "Zippo", "name": "Brushed Chrome Lighter", "cat": "carry", "price": null, "tags": ["forever"], "yours": true, "store": "", "url": "", "image": "images/zippo-brushed-chrome.jpg"},
-    {"brand": "Amazon", "name": "Your pick, name needed", "cat": null, "price": null, "tags": [], "yours": true, "pending": true, "store": "Amazon", "url": "https://a.co/d/00NiGoTN"},
-    {"brand": "Amazon", "name": "Your pick, name needed", "cat": null, "price": null, "tags": [], "yours": true, "pending": true, "store": "Amazon", "url": "https://a.co/d/064VCq0W"},
-    {"brand": "Amazon", "name": "Your pick, name needed", "cat": null, "price": null, "tags": [], "yours": true, "pending": true, "store": "Amazon", "url": "https://a.co/d/0490aFKa"},
-    {"brand": "Tojiro", "name": "DP Gyuto 210 mm", "cat": "kitchen", "price": null, "tags": ["forever", "japan", "stainless"], "store": "Cutlery & More", "url": "https://cutleryandmore.com/collections/tojiro/products/tojiro-dp-chefs-knife-13709"},
-    {"brand": "Toribe", "name": "Kitchen Scissors KS-203", "cat": "kitchen", "price": 89, "tags": ["forever", "japan", "stainless"], "store": "Japanese Taste", "url": "https://japanesetaste.com/products/toribe-scissors-kitchen-shears-ks-203"},
-    {"brand": "All-Clad", "name": "D3 Stainless 12-inch Fry Pan with Lid", "cat": "kitchen", "price": 149.99, "tags": ["forever", "stainless"], "store": "Macy's", "url": "https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035"},
-    {"brand": "Lodge", "name": "10.25-inch Cast Iron Skillet", "cat": "kitchen", "price": 34.95, "tags": ["forever"], "store": "REI", "url": "https://www.rei.com/product/714234"},
-    {"brand": "Hario", "name": "Switch Immersion Dripper 02", "cat": "coffee", "price": 44.5, "tags": ["japan"], "store": "Hario", "url": "https://www.hario-usa.com/collections/other/products/switch-immersion-dripper"},
-    {"brand": "Kalita", "name": "Wave 185 Stainless Dripper", "cat": "coffee", "price": 42, "tags": ["forever", "japan", "stainless"], "store": "Espresso Parts", "url": "https://www.espressoparts.com/products/kalita-wave-stainless-steel-dripper-185"},
-    {"brand": "Feather", "name": "AS-D2 Stainless Safety Razor", "cat": "grooming", "price": 239, "tags": ["forever", "japan", "stainless"], "store": "Pasteur Pharmacy", "url": "https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor"},
-    {"brand": "Knipex", "name": "Cobra XS Pliers", "cat": "tools", "price": 32.72, "tags": ["forever"], "store": "KC Tool", "url": "https://kctool.com/knipex-cobra-xs-pliers"},
-    {"brand": "Engineer", "name": "PZ-58 Screw Removal Pliers", "cat": "tools", "price": null, "tags": ["forever", "japan"], "store": "Engineer", "url": "https://www.engineertools-jp.com/product-page/pz-58-screw-removal-pliers-gt"},
-    {"brand": "Okatsune", "name": "103 Bypass Pruners", "cat": "tools", "price": 60.99, "tags": ["forever", "japan"], "store": "Hardwick & Sons", "url": "https://hardwickandsons.com/products/japanese-okatsune-bypass-pruners-no-103-medium"},
-    {"brand": "Silca", "name": "Pista Plus Floor Pump", "cat": "tools", "price": 215, "tags": ["forever"], "store": "Silca", "url": "https://silca.cc/products/pista-plus-floor-pump"},
-    {"brand": "Zojirushi", "name": "Stainless Mug SM-KHE48, 16 oz", "cat": "carry", "price": 39.99, "tags": ["japan", "stainless"], "store": "Zojirushi", "url": "https://store.zojirushi.com/products/smkhe48"},
-    {"brand": "Zebra", "name": "F-701 Ballpoint", "cat": "carry", "price": null, "tags": ["japan", "stainless"], "store": "Zebra", "url": "https://zebrapen.com/pages/f-701-all-metal-retractable-ballpoint"},
-    {"brand": "Leatherman", "name": "Wave Plus", "cat": "carry", "price": 129.95, "tags": ["forever", "stainless"], "store": "Leatherman", "url": "https://www.leatherman.com/wave-plus"},
-    {"brand": "Stanley", "name": "Classic Legendary Bottle, 32 oz", "cat": "carry", "price": 39, "tags": ["forever", "stainless"], "store": "Al's", "url": "https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p"}
+    {
+      "brand": "Green Bell",
+      "name": "Takumi no Waza Nail Clipper G-1205",
+      "cat": "grooming",
+      "price": null,
+      "tags": [
+        "forever",
+        "japan",
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B07HHZWF57",
+      "image": "images/green-bell-g-1205.webp"
+    },
+    {
+      "brand": "Snow Peak",
+      "name": "Ti-Single 600 Cup",
+      "cat": "carry",
+      "price": null,
+      "tags": [
+        "forever",
+        "japan"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B06XX4G5XT",
+      "image": "images/snow-peak-ti-single.webp"
+    },
+    {
+      "brand": "Fellow",
+      "name": "Stagg EKG Pro Electric Kettle",
+      "cat": "coffee",
+      "price": null,
+      "tags": [
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B0BF7HJ8MX",
+      "image": "images/fellow-stagg-ekg-pro.webp"
+    },
+    {
+      "brand": "Olfa",
+      "name": "SVR-2 Stainless Knife",
+      "cat": "tools",
+      "price": 9.99,
+      "tags": [
+        "forever",
+        "japan",
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Olfa",
+      "url": "https://olfa.com/products/9mm-svr-2-stainless-steel-auto-knife",
+      "image": "images/olfa-svr-2.webp"
+    },
+    {
+      "brand": "Marvis",
+      "name": "Whitening Mint Toothpaste",
+      "cat": "grooming",
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "store": "",
+      "url": "",
+      "image": "images/marvis-whitening-mint.webp"
+    },
+    {
+      "brand": "Zippo",
+      "name": "Brushed Chrome Lighter",
+      "cat": "carry",
+      "price": null,
+      "tags": [
+        "forever"
+      ],
+      "yours": true,
+      "store": "",
+      "url": "",
+      "image": "images/zippo-brushed-chrome.webp"
+    },
+    {
+      "price": 38,
+      "tags": [
+        "forever",
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Stanley",
+      "brand": "Stanley",
+      "name": "Textured Everyday Tumbler, 20 oz",
+      "cat": "carry",
+      "url": "https://www.stanley1913.com/products/the-textured-everyday-tumbler-20-oz",
+      "image": "images/stanley-textured-tumbler.webp"
+    },
+    {
+      "price": null,
+      "tags": [
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Stanley",
+      "name": "Quick Flip GO Bottle, 36 oz",
+      "cat": "carry",
+      "url": "https://www.amazon.com/dp/B0DTN46Q7Z",
+      "image": "images/stanley-quick-flip-go.webp"
+    },
+    {
+      "price": null,
+      "tags": [
+        "forever",
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Stanley",
+      "name": "Classic Legendary Camp Mug",
+      "cat": "carry",
+      "url": "https://www.amazon.com/dp/B08BCR9JRK",
+      "image": "images/stanley-classic-mug.webp"
+    },
+    {
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Samsonite",
+      "name": "Proxis Global Carry-On Spinner",
+      "cat": "carry",
+      "url": "https://www.amazon.com/dp/B0DT4MX1YT",
+      "image": "images/samsonite-proxis-carry-on.webp"
+    },
+    {
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Nite Ize",
+      "name": "S-Biner SlideLock Carabiner",
+      "cat": "carry",
+      "url": "https://www.amazon.com/dp/B00BKVPV8Y",
+      "image": "images/nite-ize-slidelock.webp"
+    },
+    {
+      "price": null,
+      "tags": [
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Nite Ize",
+      "name": "S-Biner SlideLock Stainless, Size 3",
+      "cat": "carry",
+      "url": "https://www.amazon.com/dp/B01D3OEZGY",
+      "image": "images/nite-ize-s-biner-slidelock-steel.webp"
+    },
+    {
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Nomad",
+      "name": "Base One Max 3-in-1 Charger",
+      "cat": "tech",
+      "url": "https://www.amazon.com/dp/B0BD7LH9ML",
+      "image": "images/nomad-base-one-max.webp"
+    },
+    {
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Apple",
+      "name": "EarPods (USB-C)",
+      "cat": "tech",
+      "url": "https://www.amazon.com/dp/B0DCH8VDXF",
+      "image": "images/apple-earpods-usb-c.webp"
+    },
+    {
+      "price": null,
+      "tags": [
+        "japan"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "G-Shock",
+      "name": "G-Steel GBM2100A-1A2",
+      "cat": "wear",
+      "url": "https://www.amazon.com/dp/B0D523G1BG",
+      "image": "images/g-shock-gbm2100a.webp"
+    },
+    {
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "London Fog",
+      "name": "Auburn Zip-Front Golf Jacket",
+      "cat": "wear",
+      "url": "https://www.amazon.com/dp/B003DTLU8Q",
+      "image": "images/london-fog-auburn-jacket.webp"
+    },
+    {
+      "brand": "Amazon",
+      "name": "Your pick, name needed",
+      "cat": null,
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "pending": true,
+      "store": "Amazon",
+      "url": "https://a.co/d/00NiGoTN"
+    },
+    {
+      "brand": "Amazon",
+      "name": "Your pick, name needed",
+      "cat": null,
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "pending": true,
+      "store": "Amazon",
+      "url": "https://a.co/d/064VCq0W"
+    },
+    {
+      "brand": "Amazon",
+      "name": "Your pick, name needed",
+      "cat": null,
+      "price": null,
+      "tags": [],
+      "yours": true,
+      "pending": true,
+      "store": "Amazon",
+      "url": "https://a.co/d/0490aFKa"
+    },
+    {
+      "brand": "Tojiro",
+      "name": "DP Gyuto 210 mm",
+      "cat": "kitchen",
+      "price": null,
+      "tags": [
+        "forever",
+        "japan",
+        "stainless"
+      ],
+      "store": "Cutlery & More",
+      "url": "https://cutleryandmore.com/collections/tojiro/products/tojiro-dp-chefs-knife-13709"
+    },
+    {
+      "brand": "Toribe",
+      "name": "Kitchen Scissors KS-203",
+      "cat": "kitchen",
+      "price": 89,
+      "tags": [
+        "forever",
+        "japan",
+        "stainless"
+      ],
+      "store": "Japanese Taste",
+      "url": "https://japanesetaste.com/products/toribe-scissors-kitchen-shears-ks-203"
+    },
+    {
+      "brand": "All-Clad",
+      "name": "D3 Stainless 12-inch Fry Pan with Lid",
+      "cat": "kitchen",
+      "price": 149.99,
+      "tags": [
+        "forever",
+        "stainless"
+      ],
+      "store": "Macy's",
+      "url": "https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035"
+    },
+    {
+      "brand": "Lodge",
+      "name": "10.25-inch Cast Iron Skillet",
+      "cat": "kitchen",
+      "price": 34.95,
+      "tags": [
+        "forever"
+      ],
+      "store": "REI",
+      "url": "https://www.rei.com/product/714234"
+    },
+    {
+      "brand": "Hario",
+      "name": "Switch Immersion Dripper 02",
+      "cat": "coffee",
+      "price": 44.5,
+      "tags": [
+        "japan"
+      ],
+      "store": "Hario",
+      "url": "https://www.hario-usa.com/collections/other/products/switch-immersion-dripper"
+    },
+    {
+      "brand": "Kalita",
+      "name": "Wave 185 Stainless Dripper",
+      "cat": "coffee",
+      "price": 42,
+      "tags": [
+        "forever",
+        "japan",
+        "stainless"
+      ],
+      "store": "Espresso Parts",
+      "url": "https://www.espressoparts.com/products/kalita-wave-stainless-steel-dripper-185"
+    },
+    {
+      "brand": "Feather",
+      "name": "AS-D2 Stainless Safety Razor",
+      "cat": "grooming",
+      "price": 239,
+      "tags": [
+        "forever",
+        "japan",
+        "stainless"
+      ],
+      "store": "Pasteur Pharmacy",
+      "url": "https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor"
+    },
+    {
+      "brand": "Knipex",
+      "name": "Cobra XS Pliers",
+      "cat": "tools",
+      "price": 32.72,
+      "tags": [
+        "forever"
+      ],
+      "store": "KC Tool",
+      "url": "https://kctool.com/knipex-cobra-xs-pliers"
+    },
+    {
+      "brand": "Engineer",
+      "name": "PZ-58 Screw Removal Pliers",
+      "cat": "tools",
+      "price": null,
+      "tags": [
+        "forever",
+        "japan"
+      ],
+      "store": "Engineer",
+      "url": "https://www.engineertools-jp.com/product-page/pz-58-screw-removal-pliers-gt"
+    },
+    {
+      "brand": "Okatsune",
+      "name": "103 Bypass Pruners",
+      "cat": "tools",
+      "price": 60.99,
+      "tags": [
+        "forever",
+        "japan"
+      ],
+      "store": "Hardwick & Sons",
+      "url": "https://hardwickandsons.com/products/japanese-okatsune-bypass-pruners-no-103-medium"
+    },
+    {
+      "brand": "Silca",
+      "name": "Pista Plus Floor Pump",
+      "cat": "tools",
+      "price": 215,
+      "tags": [
+        "forever"
+      ],
+      "store": "Silca",
+      "url": "https://silca.cc/products/pista-plus-floor-pump"
+    },
+    {
+      "brand": "Zojirushi",
+      "name": "Stainless Mug SM-KHE48, 16 oz",
+      "cat": "carry",
+      "price": 39.99,
+      "tags": [
+        "japan",
+        "stainless"
+      ],
+      "store": "Zojirushi",
+      "url": "https://store.zojirushi.com/products/smkhe48"
+    },
+    {
+      "brand": "Zebra",
+      "name": "F-701 Ballpoint",
+      "cat": "carry",
+      "price": null,
+      "tags": [
+        "japan",
+        "stainless"
+      ],
+      "store": "Zebra",
+      "url": "https://zebrapen.com/pages/f-701-all-metal-retractable-ballpoint"
+    },
+    {
+      "brand": "Leatherman",
+      "name": "Wave Plus",
+      "cat": "carry",
+      "price": 129.95,
+      "tags": [
+        "forever",
+        "stainless"
+      ],
+      "store": "Leatherman",
+      "url": "https://www.leatherman.com/wave-plus"
+    },
+    {
+      "brand": "Stanley",
+      "name": "Classic Legendary Bottle, 32 oz",
+      "cat": "carry",
+      "price": 39,
+      "tags": [
+        "forever",
+        "stainless"
+      ],
+      "store": "Al's",
+      "url": "https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p"
+    }
   ]
 }

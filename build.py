@@ -37,13 +37,15 @@ def card(p):
         paid = True
     if p.get("image"):
         art = '<img src="%s" alt="">' % e(p["image"])
+        art_cls = "art photo"
     else:
         art = '<span class="tile-mono">%s</span>' % ("?" if p.get("pending") else e(p["brand"][0]))
+        art_cls = "art"
     meta = e(p["brand"]) + (" · " + e(cats[p["cat"]]) if p.get("cat") else "")
     price = '<p class="price">%s</p>' % money(p) if p.get("price") is not None else ""
-    inner = ('<div class="art" aria-hidden="true">%s</div>%s<div class="info"><p class="meta">%s</p>'
+    inner = ('<div class="%s" aria-hidden="true">%s</div>%s<div class="info"><p class="meta">%s</p>'
              '<div class="row"><h3 class="name">%s</h3>%s</div></div>%s') % (
-        art, ARROW if url else "", meta, name_html(p["name"]), price,
+        art_cls, art, ARROW if url else "", meta, name_html(p["name"]), price,
         '<span class="sr-only">View at %s</span>' % e(p["store"]) if url else "")
     if url:
         rel = "sponsored nofollow noopener" if paid else "noopener"

@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Worth Owning</title>
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,6 +16,7 @@
      filters, then white cards on a soft grey page, three across. */
   --paper:#F2F3F1;
   --tile:#FFFFFF;
+  --art:transparent;
   --ink:#131614;
   --muted:#5F6661;
   --line:#DDE0DA;
@@ -26,6 +30,7 @@
   :root:not([data-theme="light"]){
     --paper:#0F1211;
     --tile:#181C1A;
+    --art:#DFE1DC;
     --ink:#E9ECE7;
     --muted:#99A29B;
     --line:#262C28;
@@ -36,6 +41,7 @@
 :root[data-theme="dark"]{
   --paper:#0F1211;
   --tile:#181C1A;
+  --art:#DFE1DC;
   --ink:#E9ECE7;
   --muted:#99A29B;
   --line:#262C28;
@@ -117,7 +123,9 @@ h1 em{font-style:italic}
   font-size:3.4rem;font-size:30cqi;line-height:1;
   color:color-mix(in oklab,var(--ink) 10%,var(--tile));
 }
-.art img{position:absolute;inset:9%;width:82%;height:82%;object-fit:contain}
+/* Photos are cut-outs. In dark mode they sit on a light panel so black products stay visible. */
+.art.photo{background:var(--art);margin-bottom:10px}
+.art img{position:absolute;inset:10%;width:80%;height:80%;object-fit:contain}
 .out{
   position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;
   display:grid;place-items:center;background:var(--paper);color:var(--muted);
@@ -211,7 +219,7 @@ h2{
       <p>Some links on this site are affiliate links. If you buy through one, I may earn a commission from the store, and you pay the same price either way.</p>
       <p id="amazon-line"{{AMAZON_HIDDEN}}>As an Amazon Associate I earn from qualifying purchases.</p>
       <p>Nobody pays to be listed, and a commission never decides what makes the cut.</p>
-      <p>Prices were checked on 14 November 2026. Stores change them often, so the price on the store's page is the one that counts.</p>
+      <p>Prices were checked in mid November 2026. Stores change them often, so the price on the store's page is the one that counts.</p>
     </div>
   </section>
 </main>
