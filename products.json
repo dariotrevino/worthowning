@@ -442,61 +442,20 @@
       "why": []
     },
     {
-      "brand": "All-Clad",
-      "name": "D3 Stainless 12-inch Fry Pan with Lid",
-      "slug": "all-clad-d3-stainless-12-inch-fry-pan-with-lid",
-      "cat": "kitchen",
-      "price": 149.99,
-      "tags": [
-        "forever",
-        "stainless"
-      ],
-      "store": "Macy's",
-      "url": "https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035",
-      "why": []
-    },
-    {
-      "brand": "Hario",
-      "name": "Switch Immersion Dripper 02",
-      "slug": "hario-switch-immersion-dripper-02",
-      "cat": "coffee",
-      "price": 44.5,
-      "tags": [
-        "japan"
-      ],
-      "store": "Hario",
-      "url": "https://www.hario-usa.com/collections/other/products/switch-immersion-dripper",
-      "why": []
-    },
-    {
       "brand": "Kalita",
       "name": "Wave 185 Stainless Dripper",
       "slug": "kalita-wave-185-stainless-dripper",
       "cat": "coffee",
-      "price": 42,
+      "price": 39,
       "tags": [
         "forever",
         "japan",
         "stainless"
       ],
-      "store": "Espresso Parts",
-      "url": "https://www.espressoparts.com/products/kalita-wave-stainless-steel-dripper-185",
-      "why": []
-    },
-    {
-      "brand": "Feather",
-      "name": "AS-D2 Stainless Safety Razor",
-      "slug": "feather-as-d2-stainless-safety-razor",
-      "cat": "grooming",
-      "price": 239,
-      "tags": [
-        "forever",
-        "japan",
-        "stainless"
-      ],
-      "store": "Pasteur Pharmacy",
-      "url": "https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor",
-      "why": []
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B000X1AM0Y",
+      "why": [],
+      "yours": true
     },
     {
       "brand": "Engineer",
@@ -513,61 +472,6 @@
       "why": []
     },
     {
-      "brand": "Okatsune",
-      "name": "103 Bypass Pruners",
-      "slug": "okatsune-103-bypass-pruners",
-      "cat": "tools",
-      "price": 60.99,
-      "tags": [
-        "forever",
-        "japan"
-      ],
-      "store": "Hardwick & Sons",
-      "url": "https://hardwickandsons.com/products/japanese-okatsune-bypass-pruners-no-103-medium",
-      "why": []
-    },
-    {
-      "brand": "Silca",
-      "name": "Pista Plus Floor Pump",
-      "slug": "silca-pista-plus-floor-pump",
-      "cat": "tools",
-      "price": 215,
-      "tags": [
-        "forever"
-      ],
-      "store": "Silca",
-      "url": "https://silca.cc/products/pista-plus-floor-pump",
-      "why": []
-    },
-    {
-      "brand": "Zojirushi",
-      "name": "Stainless Mug SM-KHE48, 16 oz",
-      "slug": "zojirushi-stainless-mug-sm-khe48-16-oz",
-      "cat": "carry",
-      "price": 39.99,
-      "tags": [
-        "japan",
-        "stainless"
-      ],
-      "store": "Zojirushi",
-      "url": "https://store.zojirushi.com/products/smkhe48",
-      "why": []
-    },
-    {
-      "brand": "Zebra",
-      "name": "F-701 Ballpoint",
-      "slug": "zebra-f-701-ballpoint",
-      "cat": "carry",
-      "price": null,
-      "tags": [
-        "japan",
-        "stainless"
-      ],
-      "store": "Zebra",
-      "url": "https://zebrapen.com/pages/f-701-all-metal-retractable-ballpoint",
-      "why": []
-    },
-    {
       "brand": "Leatherman",
       "name": "Wave Plus",
       "slug": "leatherman-wave-plus",
@@ -577,23 +481,10 @@
         "forever",
         "stainless"
       ],
-      "store": "Leatherman",
-      "url": "https://www.leatherman.com/wave-plus",
-      "why": []
-    },
-    {
-      "brand": "Stanley",
-      "name": "Classic Legendary Bottle, 32 oz",
-      "slug": "stanley-classic-legendary-bottle-32-oz",
-      "cat": "carry",
-      "price": 39,
-      "tags": [
-        "forever",
-        "stainless"
-      ],
-      "store": "Al's",
-      "url": "https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p",
-      "why": []
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B079MJBP21",
+      "why": [],
+      "yours": true
     }
   ],
   "ga_id": "G-7B37GYLTFW"
