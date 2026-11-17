@@ -262,6 +262,93 @@
       "image": "images/london-fog-auburn-jacket.webp"
     },
     {
+      "tags": [
+        "forever"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Knipex",
+      "name": "Cobra Water Pump Pliers, 10 in.",
+      "cat": "tools",
+      "price": 38,
+      "url": "https://www.amazon.com/dp/B000X4J2H0",
+      "image": "images/knipex-cobra-250.webp"
+    },
+    {
+      "brand": "Lodge",
+      "name": "Cast Iron Skillet with Handle Holder",
+      "cat": "kitchen",
+      "price": 34.9,
+      "tags": [
+        "forever"
+      ],
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B00G2XGC88",
+      "yours": true,
+      "image": "images/lodge-skillet.webp"
+    },
+    {
+      "tags": [
+        "forever"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Ridge",
+      "name": "The Ridge Wallet",
+      "cat": "carry",
+      "price": 99,
+      "url": "https://www.amazon.com/dp/B0B2PJJFWP",
+      "image": "images/ridge-wallet.webp"
+    },
+    {
+      "tags": [],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Logitech",
+      "name": "MX Master 4 Mouse",
+      "cat": "tech",
+      "price": 119.99,
+      "url": "https://www.amazon.com/dp/B0FC5SJNQX",
+      "image": "images/logitech-mx-master-4.webp"
+    },
+    {
+      "tags": [],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "JoyJolt",
+      "name": "Savor Double Wall Glasses",
+      "cat": "coffee",
+      "price": 20.95,
+      "url": "https://www.amazon.com/dp/B09WTTTW2N",
+      "image": "images/joyjolt-savor-glasses.webp"
+    },
+    {
+      "tags": [
+        "forever"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Fisher",
+      "name": "Space Pen, Chrome Astronaut",
+      "cat": "carry",
+      "price": 75.6,
+      "url": "https://www.amazon.com/dp/B0015ZP2AC",
+      "image": "images/fisher-space-pen.webp"
+    },
+    {
+      "tags": [
+        "stainless"
+      ],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Ninja",
+      "name": "Luxe Café Premier ES601",
+      "cat": "coffee",
+      "price": 599,
+      "url": "https://www.amazon.com/dp/B0D45PK5V4",
+      "image": "images/ninja-luxe-cafe.webp"
+    },
+    {
       "brand": "Amazon",
       "name": "Your pick, name needed",
       "cat": null,
@@ -331,17 +418,6 @@
       ],
       "store": "Macy's",
       "url": "https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035"
-    },
-    {
-      "brand": "Lodge",
-      "name": "10.25-inch Cast Iron Skillet",
-      "cat": "kitchen",
-      "price": 34.95,
-      "tags": [
-        "forever"
-      ],
-      "store": "REI",
-      "url": "https://www.rei.com/product/714234"
     },
     {
       "brand": "Hario",
