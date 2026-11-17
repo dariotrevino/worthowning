@@ -376,30 +376,15 @@
       "image": "images/darn-tough-run-no-show.webp"
     },
     {
-      "brand": "Tojiro",
-      "name": "DP Gyuto 210 mm",
+      "tags": [],
+      "yours": true,
+      "store": "Amazon",
+      "brand": "Hoshanho",
+      "name": "Chef's Knife, 8 inch",
       "cat": "kitchen",
-      "price": null,
-      "tags": [
-        "forever",
-        "japan",
-        "stainless"
-      ],
-      "store": "Cutlery & More",
-      "url": "https://cutleryandmore.com/collections/tojiro/products/tojiro-dp-chefs-knife-13709"
-    },
-    {
-      "brand": "Toribe",
-      "name": "Kitchen Scissors KS-203",
-      "cat": "kitchen",
-      "price": 89,
-      "tags": [
-        "forever",
-        "japan",
-        "stainless"
-      ],
-      "store": "Japanese Taste",
-      "url": "https://japanesetaste.com/products/toribe-scissors-kitchen-shears-ks-203"
+      "price": 64.99,
+      "url": "https://www.amazon.com/dp/B09Y91CSXD",
+      "image": "images/hoshanho-chef-knife.webp"
     },
     {
       "brand": "All-Clad",
