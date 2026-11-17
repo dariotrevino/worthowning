@@ -44,10 +44,12 @@
       "label": "Stainless steel"
     }
   ],
+  "prices_checked": "mid November 2026",
   "products": [
     {
       "brand": "Green Bell",
       "name": "Takumi no Waza Nail Clipper G-1205",
+      "slug": "green-bell-takumi-no-waza-nail-clipper-g-1205",
       "cat": "grooming",
       "price": 17,
       "tags": [
@@ -58,11 +60,13 @@
       "yours": true,
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B07HHZWF57",
-      "image": "images/green-bell-g-1205.webp"
+      "image": "images/green-bell-g-1205.webp",
+      "why": []
     },
     {
       "brand": "Snow Peak",
       "name": "Ti-Single 600 Cup",
+      "slug": "snow-peak-ti-single-600-cup",
       "cat": "carry",
       "price": 29.95,
       "tags": [
@@ -72,11 +76,13 @@
       "yours": true,
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B06XX4G5XT",
-      "image": "images/snow-peak-ti-single.webp"
+      "image": "images/snow-peak-ti-single.webp",
+      "why": []
     },
     {
       "brand": "Fellow",
       "name": "Stagg EKG Pro Electric Kettle",
+      "slug": "fellow-stagg-ekg-pro-electric-kettle",
       "cat": "coffee",
       "price": 199.95,
       "tags": [
@@ -85,11 +91,13 @@
       "yours": true,
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B0BF7HJ8MX",
-      "image": "images/fellow-stagg-ekg-pro.webp"
+      "image": "images/fellow-stagg-ekg-pro.webp",
+      "why": []
     },
     {
       "brand": "Olfa",
       "name": "SVR-2 Stainless Knife",
+      "slug": "olfa-svr-2-stainless-knife",
       "cat": "tools",
       "price": 9.99,
       "tags": [
@@ -100,22 +108,26 @@
       "yours": true,
       "store": "Olfa",
       "url": "https://olfa.com/products/9mm-svr-2-stainless-steel-auto-knife",
-      "image": "images/olfa-svr-2.webp"
+      "image": "images/olfa-svr-2.webp",
+      "why": []
     },
     {
       "brand": "Marvis",
       "name": "Whitening Mint Toothpaste",
+      "slug": "marvis-whitening-mint-toothpaste",
       "cat": "grooming",
       "price": 13.5,
       "tags": [],
       "yours": true,
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B000MEKG30",
-      "image": "images/marvis-whitening-mint.webp"
+      "image": "images/marvis-whitening-mint.webp",
+      "why": []
     },
     {
       "brand": "Zippo",
       "name": "Brushed Chrome Lighter",
+      "slug": "zippo-brushed-chrome-lighter",
       "cat": "carry",
       "price": 20.95,
       "tags": [
@@ -124,7 +136,8 @@
       "yours": true,
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B001E5FLT0",
-      "image": "images/zippo-brushed-chrome.webp"
+      "image": "images/zippo-brushed-chrome.webp",
+      "why": []
     },
     {
       "price": 38,
@@ -136,9 +149,11 @@
       "store": "Stanley",
       "brand": "Stanley",
       "name": "Textured Everyday Tumbler, 20 oz",
+      "slug": "stanley-textured-everyday-tumbler-20-oz",
       "cat": "carry",
       "url": "https://www.stanley1913.com/products/the-textured-everyday-tumbler-20-oz",
-      "image": "images/stanley-textured-tumbler.webp"
+      "image": "images/stanley-textured-tumbler.webp",
+      "why": []
     },
     {
       "price": 21,
@@ -149,9 +164,11 @@
       "store": "Amazon",
       "brand": "Stanley",
       "name": "Quick Flip GO Bottle, 36 oz",
+      "slug": "stanley-quick-flip-go-bottle-36-oz",
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B0DTN46Q7Z",
-      "image": "images/stanley-quick-flip-go.webp"
+      "image": "images/stanley-quick-flip-go.webp",
+      "why": []
     },
     {
       "price": 25.28,
@@ -163,9 +180,11 @@
       "store": "Amazon",
       "brand": "Stanley",
       "name": "Classic Legendary Camp Mug",
+      "slug": "stanley-classic-legendary-camp-mug",
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B08BCR9JRK",
-      "image": "images/stanley-classic-mug.webp"
+      "image": "images/stanley-classic-mug.webp",
+      "why": []
     },
     {
       "price": 400,
@@ -174,9 +193,11 @@
       "store": "Amazon",
       "brand": "Samsonite",
       "name": "Proxis Global Carry-On Spinner",
+      "slug": "samsonite-proxis-global-carry-on-spinner",
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B0DT4MX1YT",
-      "image": "images/samsonite-proxis-carry-on.webp"
+      "image": "images/samsonite-proxis-carry-on.webp",
+      "why": []
     },
     {
       "price": 5.69,
@@ -185,9 +206,11 @@
       "store": "Amazon",
       "brand": "Nite Ize",
       "name": "S-Biner SlideLock Carabiner",
+      "slug": "nite-ize-s-biner-slidelock-carabiner",
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B00BKVPV8Y",
-      "image": "images/nite-ize-slidelock.webp"
+      "image": "images/nite-ize-slidelock.webp",
+      "why": []
     },
     {
       "price": 5.69,
@@ -198,9 +221,11 @@
       "store": "Amazon",
       "brand": "Nite Ize",
       "name": "S-Biner SlideLock Stainless, Size 3",
+      "slug": "nite-ize-s-biner-slidelock-stainless-size-3",
       "cat": "carry",
       "url": "https://www.amazon.com/dp/B01D3OEZGY",
-      "image": "images/nite-ize-s-biner-slidelock-steel.webp"
+      "image": "images/nite-ize-s-biner-slidelock-steel.webp",
+      "why": []
     },
     {
       "price": 143,
@@ -209,9 +234,11 @@
       "store": "Amazon",
       "brand": "Nomad",
       "name": "Base One Max 3-in-1 Charger",
+      "slug": "nomad-base-one-max-3-in-1-charger",
       "cat": "tech",
       "url": "https://www.amazon.com/dp/B0BD7LH9ML",
-      "image": "images/nomad-base-one-max.webp"
+      "image": "images/nomad-base-one-max.webp",
+      "why": []
     },
     {
       "price": 19,
@@ -220,9 +247,11 @@
       "store": "Amazon",
       "brand": "Apple",
       "name": "EarPods (USB-C)",
+      "slug": "apple-earpods-usb-c",
       "cat": "tech",
       "url": "https://www.amazon.com/dp/B0DCH8VDXF",
-      "image": "images/apple-earpods-usb-c.webp"
+      "image": "images/apple-earpods-usb-c.webp",
+      "why": []
     },
     {
       "price": 234.95,
@@ -233,9 +262,11 @@
       "store": "Amazon",
       "brand": "G-Shock",
       "name": "G-Steel GBM2100A-1A2",
+      "slug": "g-shock-g-steel-gbm2100a-1a2",
       "cat": "wear",
       "url": "https://www.amazon.com/dp/B0D523G1BG",
-      "image": "images/g-shock-gbm2100a.webp"
+      "image": "images/g-shock-gbm2100a.webp",
+      "why": []
     },
     {
       "price": 850,
@@ -246,9 +277,11 @@
       "store": "Amazon",
       "brand": "Tissot",
       "name": "PRX Powermatic 80",
+      "slug": "tissot-prx-powermatic-80",
       "cat": "wear",
       "url": "https://www.amazon.com/dp/B094YLBC2F",
-      "image": "images/tissot-prx-automatic.webp"
+      "image": "images/tissot-prx-automatic.webp",
+      "why": []
     },
     {
       "price": 42.99,
@@ -257,9 +290,11 @@
       "store": "Amazon",
       "brand": "London Fog",
       "name": "Auburn Zip-Front Golf Jacket",
+      "slug": "london-fog-auburn-zip-front-golf-jacket",
       "cat": "wear",
       "url": "https://www.amazon.com/dp/B003DTLU8Q",
-      "image": "images/london-fog-auburn-jacket.webp"
+      "image": "images/london-fog-auburn-jacket.webp",
+      "why": []
     },
     {
       "tags": [
@@ -269,14 +304,17 @@
       "store": "Amazon",
       "brand": "Knipex",
       "name": "Cobra Water Pump Pliers, 10 in.",
+      "slug": "knipex-cobra-water-pump-pliers-10-in",
       "cat": "tools",
       "price": 38,
       "url": "https://www.amazon.com/dp/B000X4J2H0",
-      "image": "images/knipex-cobra-250.webp"
+      "image": "images/knipex-cobra-250.webp",
+      "why": []
     },
     {
       "brand": "Lodge",
       "name": "Cast Iron Skillet with Handle Holder",
+      "slug": "lodge-cast-iron-skillet-with-handle-holder",
       "cat": "kitchen",
       "price": 34.9,
       "tags": [
@@ -285,7 +323,8 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/dp/B00G2XGC88",
       "yours": true,
-      "image": "images/lodge-skillet.webp"
+      "image": "images/lodge-skillet.webp",
+      "why": []
     },
     {
       "tags": [
@@ -295,10 +334,12 @@
       "store": "Amazon",
       "brand": "Ridge",
       "name": "The Ridge Wallet",
+      "slug": "ridge-wallet",
       "cat": "carry",
       "price": 99,
       "url": "https://www.amazon.com/dp/B0B2PJJFWP",
-      "image": "images/ridge-wallet.webp"
+      "image": "images/ridge-wallet.webp",
+      "why": []
     },
     {
       "tags": [],
@@ -306,10 +347,12 @@
       "store": "Amazon",
       "brand": "Logitech",
       "name": "MX Master 4 Mouse",
+      "slug": "logitech-mx-master-4-mouse",
       "cat": "tech",
       "price": 119.99,
       "url": "https://www.amazon.com/dp/B0FC5SJNQX",
-      "image": "images/logitech-mx-master-4.webp"
+      "image": "images/logitech-mx-master-4.webp",
+      "why": []
     },
     {
       "tags": [],
@@ -317,10 +360,12 @@
       "store": "Amazon",
       "brand": "JoyJolt",
       "name": "Savor Double Wall Glasses",
+      "slug": "joyjolt-savor-double-wall-glasses",
       "cat": "coffee",
       "price": 20.95,
       "url": "https://www.amazon.com/dp/B09WTTTW2N",
-      "image": "images/joyjolt-savor-glasses.webp"
+      "image": "images/joyjolt-savor-glasses.webp",
+      "why": []
     },
     {
       "tags": [
@@ -330,10 +375,12 @@
       "store": "Amazon",
       "brand": "Fisher",
       "name": "Space Pen, Chrome Astronaut",
+      "slug": "fisher-space-pen-chrome-astronaut",
       "cat": "carry",
       "price": 75.6,
       "url": "https://www.amazon.com/dp/B0015ZP2AC",
-      "image": "images/fisher-space-pen.webp"
+      "image": "images/fisher-space-pen.webp",
+      "why": []
     },
     {
       "tags": [
@@ -343,10 +390,12 @@
       "store": "Amazon",
       "brand": "Ninja",
       "name": "Luxe Café Premier ES601",
+      "slug": "ninja-luxe-cafe-premier-es601",
       "cat": "coffee",
       "price": 599,
       "url": "https://www.amazon.com/dp/B0D45PK5V4",
-      "image": "images/ninja-luxe-cafe.webp"
+      "image": "images/ninja-luxe-cafe.webp",
+      "why": []
     },
     {
       "tags": [
@@ -357,10 +406,12 @@
       "store": "Amazon",
       "brand": "Toyo",
       "name": "ST-350 Steel 2-Tier Tool Box",
+      "slug": "toyo-st-350-steel-2-tier-tool-box",
       "cat": "tools",
       "price": 100.98,
       "url": "https://www.amazon.com/dp/B09Z7XMSFX",
-      "image": "images/toyo-st-350-toolbox.webp"
+      "image": "images/toyo-st-350-toolbox.webp",
+      "why": []
     },
     {
       "tags": [
@@ -370,10 +421,12 @@
       "store": "Amazon",
       "brand": "Darn Tough",
       "name": "Run No Show Tab Socks, Ultra-Lightweight",
+      "slug": "darn-tough-run-no-show-tab-socks-ultra-lightweight",
       "cat": "wear",
       "price": 19.95,
       "url": "https://www.amazon.com/dp/B08MWX9WRB",
-      "image": "images/darn-tough-run-no-show.webp"
+      "image": "images/darn-tough-run-no-show.webp",
+      "why": []
     },
     {
       "tags": [],
@@ -381,14 +434,17 @@
       "store": "Amazon",
       "brand": "Hoshanho",
       "name": "Chef's Knife, 8 inch",
+      "slug": "hoshanho-chefs-knife-8-inch",
       "cat": "kitchen",
       "price": 64.99,
       "url": "https://www.amazon.com/dp/B09Y91CSXD",
-      "image": "images/hoshanho-chef-knife.webp"
+      "image": "images/hoshanho-chef-knife.webp",
+      "why": []
     },
     {
       "brand": "All-Clad",
       "name": "D3 Stainless 12-inch Fry Pan with Lid",
+      "slug": "all-clad-d3-stainless-12-inch-fry-pan-with-lid",
       "cat": "kitchen",
       "price": 149.99,
       "tags": [
@@ -396,22 +452,26 @@
         "stainless"
       ],
       "store": "Macy's",
-      "url": "https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035"
+      "url": "https://www.macys.com/shop/product/all-clad-stainless-steel-12-covered-fry-pan?ID=1174035",
+      "why": []
     },
     {
       "brand": "Hario",
       "name": "Switch Immersion Dripper 02",
+      "slug": "hario-switch-immersion-dripper-02",
       "cat": "coffee",
       "price": 44.5,
       "tags": [
         "japan"
       ],
       "store": "Hario",
-      "url": "https://www.hario-usa.com/collections/other/products/switch-immersion-dripper"
+      "url": "https://www.hario-usa.com/collections/other/products/switch-immersion-dripper",
+      "why": []
     },
     {
       "brand": "Kalita",
       "name": "Wave 185 Stainless Dripper",
+      "slug": "kalita-wave-185-stainless-dripper",
       "cat": "coffee",
       "price": 42,
       "tags": [
@@ -420,11 +480,13 @@
         "stainless"
       ],
       "store": "Espresso Parts",
-      "url": "https://www.espressoparts.com/products/kalita-wave-stainless-steel-dripper-185"
+      "url": "https://www.espressoparts.com/products/kalita-wave-stainless-steel-dripper-185",
+      "why": []
     },
     {
       "brand": "Feather",
       "name": "AS-D2 Stainless Safety Razor",
+      "slug": "feather-as-d2-stainless-safety-razor",
       "cat": "grooming",
       "price": 239,
       "tags": [
@@ -433,11 +495,13 @@
         "stainless"
       ],
       "store": "Pasteur Pharmacy",
-      "url": "https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor"
+      "url": "https://pasteurpharmacy.com/products/feather-as-d2-all-stainless-steel-double-edge-safety-razor",
+      "why": []
     },
     {
       "brand": "Engineer",
       "name": "PZ-58 Screw Removal Pliers",
+      "slug": "engineer-pz-58-screw-removal-pliers",
       "cat": "tools",
       "price": null,
       "tags": [
@@ -445,11 +509,13 @@
         "japan"
       ],
       "store": "Engineer",
-      "url": "https://www.engineertools-jp.com/product-page/pz-58-screw-removal-pliers-gt"
+      "url": "https://www.engineertools-jp.com/product-page/pz-58-screw-removal-pliers-gt",
+      "why": []
     },
     {
       "brand": "Okatsune",
       "name": "103 Bypass Pruners",
+      "slug": "okatsune-103-bypass-pruners",
       "cat": "tools",
       "price": 60.99,
       "tags": [
@@ -457,22 +523,26 @@
         "japan"
       ],
       "store": "Hardwick & Sons",
-      "url": "https://hardwickandsons.com/products/japanese-okatsune-bypass-pruners-no-103-medium"
+      "url": "https://hardwickandsons.com/products/japanese-okatsune-bypass-pruners-no-103-medium",
+      "why": []
     },
     {
       "brand": "Silca",
       "name": "Pista Plus Floor Pump",
+      "slug": "silca-pista-plus-floor-pump",
       "cat": "tools",
       "price": 215,
       "tags": [
         "forever"
       ],
       "store": "Silca",
-      "url": "https://silca.cc/products/pista-plus-floor-pump"
+      "url": "https://silca.cc/products/pista-plus-floor-pump",
+      "why": []
     },
     {
       "brand": "Zojirushi",
       "name": "Stainless Mug SM-KHE48, 16 oz",
+      "slug": "zojirushi-stainless-mug-sm-khe48-16-oz",
       "cat": "carry",
       "price": 39.99,
       "tags": [
@@ -480,11 +550,13 @@
         "stainless"
       ],
       "store": "Zojirushi",
-      "url": "https://store.zojirushi.com/products/smkhe48"
+      "url": "https://store.zojirushi.com/products/smkhe48",
+      "why": []
     },
     {
       "brand": "Zebra",
       "name": "F-701 Ballpoint",
+      "slug": "zebra-f-701-ballpoint",
       "cat": "carry",
       "price": null,
       "tags": [
@@ -492,11 +564,13 @@
         "stainless"
       ],
       "store": "Zebra",
-      "url": "https://zebrapen.com/pages/f-701-all-metal-retractable-ballpoint"
+      "url": "https://zebrapen.com/pages/f-701-all-metal-retractable-ballpoint",
+      "why": []
     },
     {
       "brand": "Leatherman",
       "name": "Wave Plus",
+      "slug": "leatherman-wave-plus",
       "cat": "carry",
       "price": 129.95,
       "tags": [
@@ -504,11 +578,13 @@
         "stainless"
       ],
       "store": "Leatherman",
-      "url": "https://www.leatherman.com/wave-plus"
+      "url": "https://www.leatherman.com/wave-plus",
+      "why": []
     },
     {
       "brand": "Stanley",
       "name": "Classic Legendary Bottle, 32 oz",
+      "slug": "stanley-classic-legendary-bottle-32-oz",
       "cat": "carry",
       "price": 39,
       "tags": [
@@ -516,7 +592,8 @@
         "stainless"
       ],
       "store": "Al's",
-      "url": "https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p"
+      "url": "https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p",
+      "why": []
     }
   ],
   "ga_id": "G-7B37GYLTFW"
