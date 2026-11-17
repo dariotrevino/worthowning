@@ -3,7 +3,9 @@
 Run:  python3 build.py
 Edit products.json to add, remove or change picks, then run this again.
 """
-import html, json, re
+import datetime, html, json, re
+
+SITE = "https://worthowning.net/"
 
 data = json.load(open("products.json", encoding="utf-8"))
 page = open("src/page.html", encoding="utf-8").read()
@@ -28,6 +30,21 @@ def name_html(text):
         out.append('<span class="nb">%s</span>' % e if "-" in w else e)
     return " ".join(out)
 
+def image_size(path):
+    # Reads width and height from a WebP header so the browser can reserve space.
+    try:
+        b = open(path, "rb").read(30)
+        if b[12:16] == b"VP8X":
+            return 1 + int.from_bytes(b[24:27], "little"), 1 + int.from_bytes(b[27:30], "little")
+        if b[12:16] == b"VP8 ":
+            return int.from_bytes(b[26:28], "little") & 0x3FFF, int.from_bytes(b[28:30], "little") & 0x3FFF
+        if b[12:16] == b"VP8L":
+            v = int.from_bytes(b[21:25], "little")
+            return (v & 0x3FFF) + 1, ((v >> 14) & 0x3FFF) + 1
+    except OSError:
+        pass
+    return 0, 0
+
 def card(p):
     e = html.escape
     url = p.get("url") or ""
@@ -36,7 +53,12 @@ def card(p):
         url += ("&" if "?" in url else "?") + "tag=" + TAG
         paid = True
     if p.get("image"):
-        art = '<img src="%s" alt="">' % e(p["image"])
+        w, h = image_size(p["image"])
+        dims = ' width="%d" height="%d"' % (w, h) if w else ""
+        lazy = ' loading="lazy"' if card.n >= 6 else ""
+        card.n += 1
+        art = '<img src="%s" alt="%s"%s%s decoding="async">' % (
+            e(p["image"]), e(p["brand"] + " " + p["name"]), dims, lazy)
         art_cls = "art photo"
     else:
         art = '<span class="tile-mono">%s</span>' % ("?" if p.get("pending") else e(p["brand"][0]))
@@ -60,18 +82,48 @@ def tab(fid, label, on=False):
     return '<button class="tab" type="button" data-filter="%s" aria-pressed="%s">%s</button>' % (
         fid, "true" if on else "false", html.escape(label))
 
+card.n = 0
+# Placeholders still waiting on a name stay out of the public page.
+live = [p for p in data["products"] if not p.get("pending")]
+
 tabs = [tab("all", "All", True), tab("yours", "Your picks")]
 tabs += [tab(t["id"], t["label"]) for t in data["tags"]]
 tabs.append('<span class="sep" aria-hidden="true"></span>')
 tabs += [tab(c["id"], c["label"]) for c in data["categories"]]
 
 page = page.replace("{{TABS}}", "".join(tabs))
-page = page.replace("{{GRID}}", "\n      " + "\n      ".join(card(p) for p in data["products"]) + "\n    ")
+page = page.replace("{{GRID}}", "\n      " + "\n      ".join(card(p) for p in live) + "\n    ")
 page = page.replace("{{AMAZON_HIDDEN}}", "" if TAG else " hidden")
 GA = data.get("ga_id", "")
 ga = ('<script async src="https://www.googletagmanager.com/gtag/js?id=%s"></script>\n'
       '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
       'gtag("js",new Date());gtag("config","%s");</script>\n') % (GA, GA) if GA else ""
 page = page.replace("{{ANALYTICS}}", ga)
+schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Worth Owning",
+         "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"}},
+        {"@type": "Organization", "@id": SITE + "#org", "name": "Worth Owning", "url": SITE,
+         "logo": SITE + "apple-touch-icon.png"},
+        {"@type": "CollectionPage", "@id": SITE + "#page", "url": SITE,
+         "name": "Worth Owning · Buy it for life gear, Japanese tools and stainless steel",
+         "isPartOf": {"@id": SITE + "#website"},
+         "mainEntity": {"@type": "ItemList", "numberOfItems": len(live), "itemListElement": [
+             {"@type": "ListItem", "position": i + 1, "name": p["brand"] + " " + p["name"]}
+             for i, p in enumerate(live)]}},
+    ],
+}
+page = page.replace("{{SCHEMA}}", '<script type="application/ld+json">%s</script>' %
+                    json.dumps(schema, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"))
 open("index.html", "w", encoding="utf-8").write(page)
-print("Built index.html with %d picks" % len(data["products"]))
+
+today = datetime.date.today().isoformat()
+open("sitemap.xml", "w", encoding="utf-8").write(
+    '<?xml version="1.0" encoding="UTF-8"?>\n'
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    '  <url><loc>%s</loc><lastmod>%s</lastmod></url>\n'
+    '</urlset>\n' % (SITE, today))
+open("robots.txt", "w", encoding="utf-8").write(
+    "User-agent: *\nAllow: /\n\nSitemap: %ssitemap.xml\n" % SITE)
+print("Built index.html with %d picks (%d pending, hidden)" % (len(live), len(data["products"]) - len(live)))
