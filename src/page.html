@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Worth Owning</title>
-<link rel="icon" href="favicon.ico" sizes="48x48">
+{{ANALYTICS}}<link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,6 +107,11 @@ h1 em{font-style:italic}
 .sep{flex:none;width:1px;height:14px;margin:0 8px;background:var(--line)}
 .fineprint{max-width:72ch;margin:12px 0 clamp(20px,3vw,28px);padding-left:14px;font-size:.8rem;color:var(--muted)}
 .fineprint a{text-underline-offset:3px}
+.subrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 20px;margin:12px 0 clamp(20px,3vw,28px)}
+.subrow .fineprint{margin:0;flex:1 1 300px}
+.sort{flex:none;display:flex;align-items:center;gap:8px;margin:8px 0 8px 14px;font-size:.8rem;color:var(--muted)}
+.sort select{font:inherit;color:var(--ink);background:var(--tile);border:0;border-radius:999px;padding:7px 12px;cursor:pointer}
+.sort select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* Grid of picks */
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
@@ -199,7 +204,14 @@ h2{
     <div class="filters">
       <div class="tabs" id="tabs" role="group" aria-label="Filter the list">{{TABS}}</div>
     </div>
-    <p class="fineprint">I may earn a commission when you buy through these links. <a href="#disclosure">Details</a></p>
+    <div class="subrow">
+      <p class="fineprint">I may earn a commission when you buy through these links. <a href="#disclosure">Details</a></p>
+      <label class="sort">Sort <select id="sort">
+        <option value="featured">Featured</option>
+        <option value="asc">Price, low to high</option>
+        <option value="desc">Price, high to low</option>
+      </select></label>
+    </div>
     <p class="sr-only" id="status" aria-live="polite"></p>
     <ul class="grid" id="grid">{{GRID}}</ul>
   </section>
@@ -260,6 +272,21 @@ h2{
       try { if (location.hash !== "#" + f) location.hash = f; } catch (e) {}
       show(f);
     });
+  });
+  var grid = document.getElementById("grid"), sort = document.getElementById("sort");
+  var original = Array.prototype.slice.call(items);
+  sort.addEventListener("change", function () {
+    var list = original.slice(), dir = sort.value;
+    if (dir !== "featured") {
+      list.sort(function (a, b) {
+        var pa = parseFloat(a.getAttribute("data-price")), pb = parseFloat(b.getAttribute("data-price"));
+        if (isNaN(pa) && isNaN(pb)) return 0;
+        if (isNaN(pa)) return 1;      /* unpriced picks always go last */
+        if (isNaN(pb)) return -1;
+        return dir === "asc" ? pa - pb : pb - pa;
+      });
+    }
+    list.forEach(function (li) { grid.appendChild(li); });
   });
   window.addEventListener("hashchange", fromHash);
   fromHash();

@@ -52,8 +52,9 @@ def card(p):
         body = '<a class="card" href="%s" rel="%s">%s</a>' % (e(url), rel, inner)
     else:
         body = '<div class="card">%s</div>' % inner
-    return '<li data-cat="%s" data-tags="%s"%s>%s</li>' % (
-        e(p.get("cat") or ""), e(" ".join(p.get("tags", []))), " data-yours" if p.get("yours") else "", body)
+    return '<li data-cat="%s" data-tags="%s" data-price="%s"%s>%s</li>' % (
+        e(p.get("cat") or ""), e(" ".join(p.get("tags", []))),
+        "" if p.get("price") is None else p["price"], " data-yours" if p.get("yours") else "", body)
 
 def tab(fid, label, on=False):
     return '<button class="tab" type="button" data-filter="%s" aria-pressed="%s">%s</button>' % (
@@ -67,5 +68,10 @@ tabs += [tab(c["id"], c["label"]) for c in data["categories"]]
 page = page.replace("{{TABS}}", "".join(tabs))
 page = page.replace("{{GRID}}", "\n      " + "\n      ".join(card(p) for p in data["products"]) + "\n    ")
 page = page.replace("{{AMAZON_HIDDEN}}", "" if TAG else " hidden")
+GA = data.get("ga_id", "")
+ga = ('<script async src="https://www.googletagmanager.com/gtag/js?id=%s"></script>\n'
+      '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+      'gtag("js",new Date());gtag("config","%s");</script>\n') % (GA, GA) if GA else ""
+page = page.replace("{{ANALYTICS}}", ga)
 open("index.html", "w", encoding="utf-8").write(page)
 print("Built index.html with %d picks" % len(data["products"]))

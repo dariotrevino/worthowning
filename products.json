@@ -49,7 +49,7 @@
       "brand": "Green Bell",
       "name": "Takumi no Waza Nail Clipper G-1205",
       "cat": "grooming",
-      "price": null,
+      "price": 17,
       "tags": [
         "forever",
         "japan",
@@ -64,7 +64,7 @@
       "brand": "Snow Peak",
       "name": "Ti-Single 600 Cup",
       "cat": "carry",
-      "price": null,
+      "price": 29.95,
       "tags": [
         "forever",
         "japan"
@@ -78,7 +78,7 @@
       "brand": "Fellow",
       "name": "Stagg EKG Pro Electric Kettle",
       "cat": "coffee",
-      "price": null,
+      "price": 199.95,
       "tags": [
         "stainless"
       ],
@@ -106,24 +106,24 @@
       "brand": "Marvis",
       "name": "Whitening Mint Toothpaste",
       "cat": "grooming",
-      "price": null,
+      "price": 13.5,
       "tags": [],
       "yours": true,
-      "store": "",
-      "url": "",
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B000MEKG30",
       "image": "images/marvis-whitening-mint.webp"
     },
     {
       "brand": "Zippo",
       "name": "Brushed Chrome Lighter",
       "cat": "carry",
-      "price": null,
+      "price": 20.95,
       "tags": [
         "forever"
       ],
       "yours": true,
-      "store": "",
-      "url": "",
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B001E5FLT0",
       "image": "images/zippo-brushed-chrome.webp"
     },
     {
@@ -141,7 +141,7 @@
       "image": "images/stanley-textured-tumbler.webp"
     },
     {
-      "price": null,
+      "price": 21,
       "tags": [
         "stainless"
       ],
@@ -154,7 +154,7 @@
       "image": "images/stanley-quick-flip-go.webp"
     },
     {
-      "price": null,
+      "price": 25.28,
       "tags": [
         "forever",
         "stainless"
@@ -168,7 +168,7 @@
       "image": "images/stanley-classic-mug.webp"
     },
     {
-      "price": null,
+      "price": 400,
       "tags": [],
       "yours": true,
       "store": "Amazon",
@@ -179,7 +179,7 @@
       "image": "images/samsonite-proxis-carry-on.webp"
     },
     {
-      "price": null,
+      "price": 5.69,
       "tags": [],
       "yours": true,
       "store": "Amazon",
@@ -203,7 +203,7 @@
       "image": "images/nite-ize-s-biner-slidelock-steel.webp"
     },
     {
-      "price": null,
+      "price": 143,
       "tags": [],
       "yours": true,
       "store": "Amazon",
@@ -214,7 +214,7 @@
       "image": "images/nomad-base-one-max.webp"
     },
     {
-      "price": null,
+      "price": 19,
       "tags": [],
       "yours": true,
       "store": "Amazon",
@@ -225,7 +225,7 @@
       "image": "images/apple-earpods-usb-c.webp"
     },
     {
-      "price": null,
+      "price": 234.95,
       "tags": [
         "japan"
       ],
@@ -238,7 +238,7 @@
       "image": "images/g-shock-gbm2100a.webp"
     },
     {
-      "price": null,
+      "price": 850,
       "tags": [
         "stainless"
       ],
@@ -251,7 +251,7 @@
       "image": "images/tissot-prx-automatic.webp"
     },
     {
-      "price": null,
+      "price": 42.99,
       "tags": [],
       "yours": true,
       "store": "Amazon",
@@ -474,5 +474,6 @@
       "store": "Al's",
       "url": "https://www.als.com/stanley-the-legendary-classic-bottle-10534820/p"
     }
-  ]
+  ],
+  "ga_id": ""
 }
