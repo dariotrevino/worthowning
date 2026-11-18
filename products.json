@@ -231,22 +231,6 @@
     },
     {
       "price": 5.69,
-      "tags": [],
-      "yours": true,
-      "store": "Amazon",
-      "brand": "Nite Ize",
-      "name": "S-Biner SlideLock Carabiner",
-      "slug": "nite-ize-s-biner-slidelock-carabiner",
-      "cat": "carry",
-      "url": "https://www.amazon.com/dp/B00BKVPV8Y",
-      "image": "images/nite-ize-slidelock.webp",
-      "why": [
-        "A Nite Ize carabiner whose gate locks with a small slider, so keys and gear stay clipped until you decide to unlock it.",
-        "It's the cheapest way to stop losing keys off a belt loop or bag strap. Nite Ize stands behind it with their Worry Free Guarantee. Not rated for climbing."
-      ]
-    },
-    {
-      "price": 5.69,
       "tags": [
         "stainless"
       ],
