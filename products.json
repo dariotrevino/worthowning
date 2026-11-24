@@ -245,7 +245,8 @@
       "why": [
         "A hardside spinner from Travelpro, the brand a Northwest Airlines pilot started after inventing the rolling carry-on in 1987. The case is 19.75 by 13.75 by 9.5 inches, weighs 6.7 pounds, and expands when you need a little more room.",
         "Travelpro sizer-tests it against the overhead bins of most major US airlines, so it fits without a fight at the gate. Fully expanded it may go over some airlines' limits, so zip it back in before you fly."
-      ]
+      ],
+      "image": "images/travelpro-maxlite-air-v2.webp"
     },
     {
       "price": 5.69,
@@ -377,7 +378,8 @@
       "why": [
         "On's everyday sneaker: CloudTec cushioning pods under a light, breathable mesh upper, with elastic speed laces so you slip them on without tying.",
         "Light enough for a full day on your feet, travel days included, and plain enough to wear with jeans or shorts. The sixth version of a shoe On has been refining for over a decade."
-      ]
+      ],
+      "image": "images/on-cloud-6.webp"
     },
     {
       "tags": [
@@ -720,7 +722,8 @@
       "why": [
         "Four 16 ounce pint cups made from 304 food grade stainless steel, polished on the outside and electropolished inside. They stack, go in the dishwasher and weigh almost nothing.",
         "Glass pints chip and break; these won't. They work for water, beer or iced coffee, at home, by the pool or at the campsite, and they'll still look the same in twenty years."
-      ]
+      ],
+      "image": "images/greens-steel-pint-cups.webp"
     },
     {
       "brand": "Kiehl's",
