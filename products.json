@@ -596,21 +596,8 @@
       "why": [
         "The candle most people picture when they think of a luxury candle. Baies smells of blackcurrant leaves and rose, and the 190 gram size burns for around 60 hours.",
         "When the wax is gone, the heavy glass makes a good cup for pens, brushes or matches, so it keeps earning its place long after the last burn."
-      ]
-    },
-    {
-      "brand": "Le Labo",
-      "name": "Santal 26 Classic Candle",
-      "cat": "fragrance",
-      "price": 81,
-      "store": "Amazon",
-      "url": "https://www.amazon.com/dp/B0D5KMG6HY",
-      "slug": "le-labo-santal-26-classic-candle",
-      "tags": [],
-      "why": [
-        "A 245 gram candle in a simple glass jar, poured in the USA. Santal 26 is smoky and leathery with sandalwood underneath, warmer and more masculine than most candles.",
-        "It pairs well with the cologne picks here if you like a room and a person to smell like they belong together."
-      ]
+      ],
+      "image": "images/diptyque-baies.webp"
     },
     {
       "brand": "Comme des Garçons",
@@ -626,7 +613,8 @@
       "why": [
         "A woody fragrance from Comme des Garçons, the fashion house Rei Kawakubo founded in Tokyo. Cedar, sandalwood, vetiver and guaiac wood sit over a peppery, incense-like opening.",
         "It smells like nothing else at the department store counter, and it stays close to the skin instead of filling the room."
-      ]
+      ],
+      "image": "images/cdg-wonderwood.webp"
     },
     {
       "brand": "Issey Miyake",
@@ -641,7 +629,8 @@
       "why": [
         "A citrus classic from the Japanese designer Issey Miyake, first released in 1994. Yuzu opens it, nutmeg warms it, and sandalwood carries it through the day.",
         "It is the everyday bottle: clean, easy to wear to the office, and priced well below most designer fragrances."
-      ]
+      ],
+      "image": "images/issey-miyake-leau-dissey.webp"
     },
     {
       "brand": "Maison Margiela",
@@ -655,89 +644,8 @@
       "why": [
         "Rum, tobacco leaf and vanilla with pink pepper on top, meant to smell like a late night in a wood-panelled bar.",
         "This is the evening pick. It is warm and sweet without being loud, and it works best when the weather turns cold."
-      ]
-    },
-    {
-      "brand": "Filson",
-      "name": "Medium Rugged Twill Duffle",
-      "cat": "carry",
-      "price": 449,
-      "store": "Amazon",
-      "url": "https://www.amazon.com/dp/B0DDVMKX6G",
-      "slug": "filson-medium-rugged-twill-duffle",
-      "tags": [
-        "forever"
       ],
-      "why": [
-        "A 43 liter duffle made from Filson's heavy cotton Rugged Twill with bridle leather handles and trim, made in the USA. It has an optional shoulder strap and inside pockets for the small things.",
-        "The twill softens and the leather darkens the more you travel with it. This is the kind of bag that looks better in year ten than it did in year one."
-      ]
-    },
-    {
-      "brand": "Tom Bihn",
-      "name": "Aeronaut 45 Travel Bag",
-      "cat": "carry",
-      "price": 345,
-      "store": "Tom Bihn",
-      "url": "https://www.tombihn.com/collections/all/aeronaut",
-      "slug": "tom-bihn-aeronaut-45",
-      "tags": [
-        "forever"
-      ],
-      "why": [
-        "A 45 liter bag sized to fit as a carry-on, made in Tom Bihn's own factory in Seattle. It carries as a duffle, by shoulder strap or as a backpack.",
-        "Tom Bihn has stood behind its bags since 1972 and repairs them at the factory, which is why people are still carrying Aeronauts they bought over a decade ago."
-      ]
-    },
-    {
-      "brand": "Porter-Yoshida",
-      "name": "Tanker 2Way Boston Bag",
-      "cat": "carry",
-      "price": 541,
-      "store": "Packer",
-      "url": "https://packershoes.com/products/tanker-boston-bag",
-      "slug": "porter-yoshida-tanker-2way-boston-bag",
-      "tags": [
-        "japan"
-      ],
-      "why": [
-        "Yoshida & Co. has made the Tanker series in Japan since 1983, using a nylon modeled on the MA-1 flight jacket, with the same bright orange lining.",
-        "This Boston bag carries by its handles or a removable shoulder strap. It is light, quiet in design, and one of the most recognizable Japanese bags ever made."
-      ]
-    },
-    {
-      "brand": "Tanner Goods",
-      "name": "Standard Belt 1.5 in",
-      "cat": "wear",
-      "price": 135,
-      "from": true,
-      "store": "Tanner Goods",
-      "url": "https://tannergoods.com/collections/belts",
-      "slug": "tanner-goods-standard-belt",
-      "tags": [
-        "forever",
-        "stainless"
-      ],
-      "why": [
-        "A 1.5 inch leather belt handmade in Portland, Oregon, with a stainless steel roller buckle.",
-        "Thick leather, simple hardware and no stitching to fail. Buy it once, let it break in, and it will outlast every pair of jeans you wear it with."
-      ]
-    },
-    {
-      "brand": "Filson",
-      "name": "1.5 in Bridle Leather Belt",
-      "cat": "wear",
-      "price": 129,
-      "store": "Amazon",
-      "url": "https://www.amazon.com/dp/B0DK48Q8ZH",
-      "slug": "filson-bridle-leather-belt-1-5-in",
-      "tags": [
-        "forever"
-      ],
-      "why": [
-        "Saddle grade bridle leather from North American steer hides, tanned in the USA, with a rustproof roller buckle and seven holes.",
-        "Bridle leather is waxed through and stiff at first, then shapes itself to you. It pairs naturally with the Filson duffle."
-      ]
+      "image": "images/margiela-jazz-club.webp"
     },
     {
       "brand": "Aesop",
@@ -751,51 +659,8 @@
       "why": [
         "A low-foaming body wash with geranium leaf, mandarin and bergamot. It smells green and fresh without being sweet, and a 500 ml bottle lasts around 125 showers.",
         "Not buy it forever, but buy it again: the amber bottle looks right in any shower and it is the one body wash people notice."
-      ]
-    },
-    {
-      "brand": "Aesop",
-      "name": "Geranium Leaf Body Balm 500 ml",
-      "cat": "grooming",
-      "price": 101.65,
-      "store": "Amazon",
-      "url": "https://www.amazon.com/dp/B0041PC1QG",
-      "slug": "aesop-geranium-leaf-body-balm",
-      "tags": [],
-      "why": [
-        "A medium weight body lotion built on nut oils with geranium leaf and citrus extracts. It sinks in quickly and leaves no greasy film.",
-        "It shares the scent of the body cleanser, so the two work as a pair and the smell carries through the day."
-      ]
-    },
-    {
-      "brand": "Hada Labo",
-      "name": "Gokujun Premium Hyaluronic Lotion 170 ml",
-      "cat": "grooming",
-      "price": 17,
-      "store": "Amazon",
-      "url": "https://www.amazon.com/dp/B013HHJV0C",
-      "slug": "hada-labo-gokujun-premium-hyaluronic-lotion",
-      "tags": [
-        "japan"
       ],
-      "why": [
-        "The Japanese version of Hada Labo's cult hydrating lotion, made in Japan by Rohto. It is packed with several forms of hyaluronic acid and has no fragrance, oil or parabens.",
-        "Pat it into your face after washing and before any cream. It does one job very well for less than the price of lunch."
-      ]
-    },
-    {
-      "brand": "Tatcha",
-      "name": "The Dewy Skin Cream 1.7 oz",
-      "cat": "grooming",
-      "price": 74,
-      "store": "Amazon",
-      "url": "https://www.amazon.com/dp/B09QBB8ZL4",
-      "slug": "tatcha-the-dewy-skin-cream",
-      "tags": [],
-      "why": [
-        "A rich face cream inspired by Japanese skincare, made with hyaluronic acid, Japanese purple rice and red algae. Best for dry or combination skin.",
-        "It comes in a heavy jar that looks good on a shelf, and a little goes a long way."
-      ]
+      "image": "images/aesop-geranium-body-cleanser.webp"
     },
     {
       "brand": "Apple",
@@ -809,40 +674,8 @@
       "why": [
         "Apple's best everyday earbuds, with active noise cancellation, transparency mode, a hearing aid feature and heart rate sensing for workouts. They charge over USB-C.",
         "Earbuds are not buy it forever, since batteries fade after a few years. But if you live in the Apple ecosystem, these are the ones to own, and Amazon often sells them well below Apple's price."
-      ]
-    },
-    {
-      "brand": "Miansai",
-      "name": "4 mm Cuban Chain Bracelet, Sterling Silver",
-      "cat": "wear",
-      "price": 190,
-      "store": "Amazon",
-      "url": "https://www.amazon.com/dp/B0BLT2XMKV",
-      "slug": "miansai-cuban-chain-bracelet-sterling-silver",
-      "tags": [
-        "forever"
       ],
-      "why": [
-        "A 4 mm Cuban chain in polished sterling silver from Miansai, the Miami jewelry brand.",
-        "Solid silver, a clean clasp and enough weight to feel real on the wrist. It ages well and only needs a polish now and then."
-      ]
-    },
-    {
-      "brand": "Miansai",
-      "name": "3 mm Cuban Chain Necklace, Sterling Silver",
-      "cat": "wear",
-      "price": 175,
-      "from": true,
-      "store": "Amazon",
-      "url": "https://www.amazon.com/dp/B08WCL4MMJ",
-      "slug": "miansai-cuban-chain-necklace-sterling-silver",
-      "tags": [
-        "forever"
-      ],
-      "why": [
-        "A 3 mm sterling silver Cuban chain with a lobster clasp, the matching piece to the Miansai bracelet.",
-        "Thin enough to wear every day under a shirt, solid enough to last for decades."
-      ]
+      "image": "images/airpods-pro-3.webp"
     },
     {
       "brand": "Greens Steel",
@@ -859,6 +692,22 @@
       "why": [
         "Four 16 ounce pint cups made from 304 food grade stainless steel, polished on the outside and electropolished inside. They stack, go in the dishwasher and weigh almost nothing.",
         "Glass pints chip and break; these won't. They work for water, beer or iced coffee, at home, by the pool or at the campsite, and they'll still look the same in twenty years."
+      ]
+    },
+    {
+      "brand": "Kiehl's",
+      "name": "Ultra Facial Cream with 4.5% Squalane",
+      "cat": "grooming",
+      "price": 39,
+      "from": true,
+      "store": "Amazon",
+      "url": "https://www.amazon.com/dp/B004JVSGWU",
+      "slug": "kiehls-ultra-facial-cream",
+      "tags": [],
+      "image": "images/kiehls-ultra-facial-cream.webp",
+      "why": [
+        "Kiehl's daily face moisturizer, made with 4.5% squalane and glacial glycoprotein. It's light enough for mornings under sunscreen and still holds up in dry winter air.",
+        "Not buy it forever, but buy it again: the formula has barely changed in decades, and a 1.7 oz jar lasts a couple of months of daily use."
       ]
     }
   ],
