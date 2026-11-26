@@ -146,7 +146,7 @@ home_schema = {
         {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Worth Owning",
          "inLanguage": "en-US", "publisher": {"@id": SITE + "#org"}},
         {"@type": "Organization", "@id": SITE + "#org", "name": "Worth Owning", "url": SITE,
-         "logo": SITE + "apple-touch-icon.png"},
+         "logo": SITE + "logo.png"},
         {"@type": "CollectionPage", "@id": SITE + "#page", "url": SITE,
          "name": "Worth Owning · Buy it for life gear, Japanese tools and stainless steel",
          "isPartOf": {"@id": SITE + "#website"},
@@ -163,7 +163,7 @@ FOOTER = (
     '  <p class="notice">Some links are affiliate links, so I may earn a commission if you buy through them.%s '
     'Prices were entered by hand in %s and may have changed. '
     'I back what I share, and only include products I use, trust or see real value in.%s</p>\n'
-    '  <div class="foot-row"><a class="wordmark" href="/">Worth Owning</a>'
+    '  <div class="foot-row"><a class="wordmark" href="/"><img class="mark" src="/logo-mark.webp" width="32" height="32" alt="">Worth Owning</a>'
     '<span>© 2026 · worthowning.net</span></div>\n'
     '</footer>') % (
     " As an Amazon Associate I earn from qualifying purchases." if TAG else "",
